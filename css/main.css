@@ -1,3 +1,70 @@
 #slider{width: 100%;height: 100%;position: relative;background-image:url(../img/main/pohto/배경.jpg);background-position: center;
 background-size: cover;}
 .slider-text{position: absolute;left: 50%;top:20%;transform:translateX(-50%);}
+.Ticketing{width: 800px; height: 200px;background-color: aquamarine;
+position: absolute; left: 50%;bottom: -100px; transform: translateX(-50%);}
+
+
+/* 매뉴박스 */
+#menu{width: 1000px;height: auto;display: flex;margin: 0 auto;
+flex-direction: row;flex-wrap: wrap;justify-content: space-between;
+align-content: space-between;padding-top: 150px;margin-bottom: 100px;}
+#menu .title{width: 100%;font-size: 25px;margin-bottom: 30px;}
+#menu a{height: 370px;width: 23.5%}
+#menu .menu-box{height: 100%;width: 100%;background-color: blue;}
+
+/* 스토어 */
+#store{width: 100%; height: 580px; background-color: cadetblue;
+margin: 0 auto;position: relative;margin-bottom: 100px;}
+#store .photo{width: 50%;height: 100%; background-color: chocolate;
+position: absolute;left: 0;top: 0;}
+#store .store-box{width: 1000px;height: 100%;margin: 0 auto;
+background-color: coral;}
+.store-text{float: right;width: 50%;height: 100%;
+background-color: crimson;}
+
+/* 이벤트 */
+#event{width: 100%; height: 460px; background-color: cyan;}
+#event ul{width: 500%;height: 100%;background-color: darkblue;}
+#event li{width: 20%;height: 100%;float: left;}
+#event div{width: 1000px;height: 100%;background-position: center;
+background-size: contain;margin: 0 auto;}
+.event1{background-color:#202020;}
+    .event1 div{background-image: url(../img/main/event/event1.jpg);}
+.event2{background-color:#ee4037;}
+    .event2 div{background-image: url(../img/main/event/event2.jpg);}
+.event3{background-color:#430081;}
+    .event3 div{background-image: url(../img/main/event/event3.jpg);}
+.event4{background-color:#01bccb;}
+    .event4 div{background-image: url(../img/main/event/event4.jpg);}
+.event5{background-color:#020b34;}
+    .event5 div{background-image: url(../img/main/event/event5.jpg);}
+
+/* 최저가 국내선 */
+#yeohaeng{width: 100%;height: 1100px; background-color: coral;
+margin-top: 100px;}
+.yeohaeng-text{width: 1000px;height: auto;margin: 0 auto;
+background-color: cornflowerblue;}
+.yeohaeng-text h2{}
+#yeohaeng a{position: absolute;width: 23%;height: 300px;}
+.yeohaeng-photo{width: 100%;height: 750px;background-color: cornsilk;
+position: relative;}
+#yeohaeng .photo{width: 100%;height: 100%;background-position: center;background-size: cover;}
+#yeohaeng .photo .text{float: right;margin-top: 190px;margin-right: 40px;}
+#yeohaeng .photo .text h3{font-size: 21px;margin-bottom: 10px;
+color: white;}
+#yeohaeng .photo .text p{font-size: 15px;color: white;}
+    /* 사진 포지션 */
+    #yeohaeng a:nth-of-type(1){top: 250px;left: 1.5%;;}
+    #yeohaeng a:nth-of-type(2){top: 155px;left:26.2%;}
+    #yeohaeng a:nth-of-type(3){top: 485px;left:26.2%;}
+    #yeohaeng a:nth-of-type(4){top: 0;right:26.2%;}
+    #yeohaeng a:nth-of-type(5){top: 330px;right:26.2%;}
+    #yeohaeng a:nth-of-type(6){top: 145px;right:1.5%}
+    /* 사진들 */
+    #yeohaeng a:nth-of-type(1) .photo{background-image: url(../img/main/여행지/제주도.jpg);}
+    #yeohaeng a:nth-of-type(2) .photo{background-image: url(../img/main/여행지/부산.jpg);}
+    #yeohaeng a:nth-of-type(3) .photo{background-image: url(../img/main/여행지/여수.jpg);}
+    #yeohaeng a:nth-of-type(4) .photo{background-image: url(../img/main/여행지/포항.jpg);}
+    #yeohaeng a:nth-of-type(5) .photo{background-image: url(../img/main/여행지/제주도.jpg);}
+    #yeohaeng a:nth-of-type(6) .photo{background-image: url(../img/main/여행지/제주도2.jpg);}
