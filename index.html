@@ -10,7 +10,13 @@
     <link rel="stylesheet" href="css/main.css">
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
     <script>
-
+        function  Slide(){
+            $('#event ul').stop().animate({'marginLeft':'-100%'},1000,function(){
+                $('#event li:first').appendTo('#event ul');
+                $('#event ul').css({marginLeft:0});
+            });
+        }
+        setInterval(Slide,5000);
     </script>
 </head>
 <body>
@@ -81,13 +87,55 @@
 
     <!-- 스토어 -->
     <div id="store">
-        <div class="photo"></div>
-        <div class="photo-box"></div>
-        <div class="photo-box"></div>
+        <div class="store-title">
+            <h2>지니스토어</h2>
+        </div>
         <!-- 스토어 박스 -->
         <div class="store-box">
-            <div class="store-text">
+            <div class="photo">
+                <div class="photo-box"></div>
+                <div class="photo-box"></div> 
+            </div>
 
+            <div class="store-text">
+                <h2>집에서 즐기는 기내식</h2>
+                <a href="#">
+                    <div class="store-Goods">
+                        <div>
+                            <img src="img/main/지니스토어/getImage.jpg" alt="">
+                        </div>
+                        
+                        <h3>크림 파스타 기내식 세트</h3>
+                        <p>10,000원</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="store-Goods">
+                        <div>
+                            <img src="img/main/지니스토어/getImage (1).jpg" alt="">
+                        </div>
+                        <h3>캐슈넛 치킨 기내식 세트</h3>
+                        <p>10,000원</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="store-Goods">
+                        <div>
+                            <img src="img/main/지니스토어/getImage (2).jpg" alt="">
+                        </div>
+                        <h3>비프 굴라쉬 기내식 세트</h3>
+                        <p>10,000원</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="store-Goods">
+                        <div>
+                            <img src="img/main/지니스토어/getImage (3).jpg" alt="">
+                        </div>
+                        <h3>기내식3종 세트</h3>
+                        <p>30,000원</p>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
@@ -108,75 +156,69 @@
             <p>진에어에서 제공하는 최저가를 한 눈에!</p>
         </div>
         <div class="yeohaeng-photo">
-            <div class="photo">
+
+            <a href="#">
+                <div class="photo"></div>
                 <div class="text">
                     <h3>서울/김포→제주</h3>
                     <p> 편도 총액</p>
                     <p> KRW 17,500~</p>
                 </div>
-            </div>
+            </a>
+
             <a href="#">
-                <div class="photo">
-                    <div class="text">
-                        <h3>서울/김포→제주</h3>
-                        <p> 편도 총액</p>
-                        <p> KRW 17,500~</p>
-                    </div>
+                <div class="photo"></div>
+                <div class="text">
+                    <h3>서울/김포→부산</h3>
+                    <p> 편도 총액</p>
+                    <p> KRW 25,500~</p>
                 </div>
             </a>
 
             <a href="#">
-                <div class="photo">
-                    <div class="text">
-                        <h3>서울/김포→제주</h3>
-                        <p> 편도 총액</p>
-                        <p> KRW 17,500~</p>
-                    </div>
+                <div class="photo"></div>
+                <div class="text">
+                    <h3>서울/김포→포항</h3>
+                    <p> 편도 총액</p>
+                    <p> KRW 40,500~</p>
                 </div>
             </a>
 
             <a href="#">
-                <div class="photo">
-                    <div class="text">
-                        <h3>서울/김포→제주</h3>
-                        <p> 편도 총액</p>
-                        <p> KRW 17,500~</p>
-                    </div>
+                <div class="photo"></div>
+                <div class="text">
+                    <h3>서울/김포→여수</h3>
+                    <p> 편도 총액</p>
+                    <p> KRW 21,500~</p>
                 </div>
             </a>
 
             <a href="#">
-                <div class="photo">
-                    <div class="text">
-                        <h3>서울/김포→제주</h3>
-                        <p> 편도 총액</p>
-                        <p> KRW 17,500~</p>
-                    </div>
+                <div class="photo"></div>
+                <div class="text">
+                    <h3>서울/김포→제주</h3>
+                    <p> 편도 총액</p>
+                    <p> KRW 17,500~</p>
                 </div>
             </a>
 
             <a href="#">
-                <div class="photo">
-                    <div class="text">
-                        <h3>서울/김포→제주</h3>
-                        <p> 편도 총액</p>
-                        <p> KRW 17,500~</p>
-                    </div>
-                </div>
-            </a>
-
-            <a href="#">
-                <div class="photo">
-                    <div class="text">
-                        <h3>서울/김포→제주</h3>
-                        <p> 편도 총액</p>
-                        <p> KRW 17,500~</p>
-                    </div>
+                <div class="photo"></div>
+                <div class="text">
+                    <h3>원주→제주</h3>
+                    <p> 편도 총액</p>
+                    <p> KRW 41,500~</p>
                 </div>
             </a>
         </div>
+        <div class="background"></div>
     </div>
 
+
+
+
+
+    <!-- 프터 //////////////////// -->
     <footer>
         <div class="menu-outside">
             <div class="menu">
