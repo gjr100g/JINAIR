@@ -1,8 +1,22 @@
-#slider{width: 100%;height: 100%;position: relative;background-image:url(../img/main/pohto/배경1.png);background-position: center;
-background-size: cover;}
+/* 슬라이더 */
+#slider{width: 100%;height: 100%;position: relative;background-image:url(../img/main/pohto/배경3.png);
+background-position: center;background-size: cover;}
 .slider-text{position: absolute;left: 50%;top:20%;transform:translateX(-50%);}
-.Ticketing{width: 800px; height: 200px;background-color: aquamarine;
-position: absolute; left: 50%;bottom: -100px; transform: translateX(-50%);}
+.Ticketing{width: 800px; height: 180px;background-color: white;
+position: absolute; left: 50%;bottom: -90px; transform: translateX(-50%);
+display: flex; flex-direction: row;flex-wrap: wrap;justify-content: space-around;
+align-content: space-around;box-shadow: 5px 5px 20px 1px rgb(185, 185, 185);
+padding: 20px 20px;}
+
+.Ticketing-sub{width: 100%;margin-left: 10px;}
+.Ticketing-sub h2{display: inline-block;font-size: 15px;cursor: pointer;margin-right: 10px;}
+.Ticketing-box{width: 20%;height: 50px; border: solid rgb(226, 226, 226) 1px;
+padding: 14px 8px;cursor: pointer;box-shadow: 3px 3px 5px 0 rgb(226, 226, 226);}
+.Ticketing-box h2{font-size: 15px;}
+.Ticketing-box h2:nth-of-type(1){float: left;}
+.Ticketing-box h2:nth-of-type(2){float: right;}
+.Ticketing input{width: 12%; background-color:#c1d82e;border: solid rgb(226, 226, 226) 1px;
+font-weight: bold;box-shadow: 3px 3px 5px 0 rgb(226, 226, 226);}
 
 
 /* 매뉴박스 */
@@ -92,7 +106,7 @@ color: white; text-shadow: 0 0 3px black;}
     #yeohaeng a:nth-of-type(2) .photo{background-image: url(../img/main/여행지/부산.jpg);}
     #yeohaeng a:nth-of-type(3) .photo{background-image: url(../img/main/여행지/여수.jpg);}
     #yeohaeng a:nth-of-type(4) .photo{background-image: url(../img/main/여행지/포항.jpg);}
-    #yeohaeng a:nth-of-type(5) .photo{background-image: url(../img/main/여행지/제주도.jpg);}
+    #yeohaeng a:nth-of-type(5) .photo{background-image: url(../img/main/여행지/광주.jpg);}
     #yeohaeng a:nth-of-type(6) .photo{background-image: url(../img/main/여행지/제주도2.jpg);}
 .background{width: 100%;height: 600px;background-image: url(../img/main/배경.jpg);
     background-position: center;background-size: cover;}
