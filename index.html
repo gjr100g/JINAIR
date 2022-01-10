@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/main.css">
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
     <script>
+        // 이벤트
         function  Slide(){
             $('#event ul').stop().animate({'marginLeft':'-100%'},1000,function(){
                 $('#event li:first').appendTo('#event ul');
@@ -17,6 +18,121 @@
             });
         }
         setInterval(Slide,5000);
+        
+        // 예매
+        $(function(){
+            $('.depart').click(function(){
+                $('.depart').toggleClass('click');
+                $('.Ticketing-box').not('.depart').removeClass('click')
+                $('.depart-box').slideToggle();
+                $('.hide').not('.depart-box').slideUp();
+            });
+            $('.arrival').click(function(){
+                $('.arrival').toggleClass('click');
+                $('.Ticketing-box').not('.arrival').removeClass('click')
+                $('.arrival-box').slideToggle();
+                $('.hide').not('.arrival-box').slideUp();
+            });
+            $('.daytogo').click(function(){
+                $('.daytogo').toggleClass('click');
+                $('.Ticketing-box').not('.daytogo').removeClass('click')
+                $('.daytogo-box').slideToggle();
+                $('.hide').not('.daytogo-box').slideUp();
+            });
+            $('.comingday').click(function(){
+                $('.comingday').toggleClass('click');
+                $('.Ticketing-box').not('.comingday').removeClass('click')
+                $('.daytogo-box').slideToggle();
+                $('.hide').not('.daytogo-box').slideUp();
+            });
+        });
+
+        // 달력
+        var today = new Date();
+        function buildCalendar(){
+        var row = null
+        var cnt = 0;
+        var calendarTable = document.getElementById("calendar");
+        var calendarTableTitle = document.getElementById("calendarTitle");
+        calendarTableTitle.innerHTML = today.getFullYear()+"년"+(today.getMonth()+1)+"월";
+        
+        var firstDate = new Date(today.getFullYear(), today.getMonth(), 1);
+        var lastDate = new Date(today.getFullYear(), today.getMonth()+1, 0);
+        while(calendarTable.rows.length > 2){
+            calendarTable.deleteRow(calendarTable.rows.length -1);
+        }
+
+        row = calendarTable.insertRow();
+        for(i = 0; i < firstDate.getDay(); i++){
+            cell = row.insertCell();
+            cnt += 1;
+        }
+
+        row = calendarTable.insertRow();
+
+        for(i = 1; i <= lastDate.getDate(); i++){
+            cell = row.insertCell();
+            cnt += 1;
+
+            cell.setAttribute('id', i);
+            cell.innerHTML = i;
+            cell.align = "center";
+
+            cell.onclick = function(){
+                clickedYear = today.getFullYear();
+                clickedMonth = ( 1 + today.getMonth() );
+                clickedDate = this.getAttribute('id');
+
+                clickedDate = clickedDate >= 10 ? clickedDate : '0' + clickedDate;
+                clickedMonth = clickedMonth >= 10 ? clickedMonth : '0' + clickedMonth;
+                clickedYMD = clickedYear + "-" + clickedMonth + "-" + clickedDate;
+
+                opener.document.getElementById("date").value = clickedYMD;
+                self.close();
+            }
+
+            if (cnt % 7 == 1) {
+                cell.innerHTML = "<font color=red>" + i + "</font>";
+            }
+
+            if (cnt % 7 == 0){
+                cell.innerHTML = "<font color=blue>" + i + "</font>";
+                row = calendar.insertRow();
+            }
+        }
+
+        if(cnt % 7 != 0){
+            for(i = 0; i < 7 - (cnt % 7); i++){
+                cell = row.insertCell();
+            }
+        }
+        }
+
+        function prevCalendar(){
+            today = new Date(today.getFullYear(), today.getMonth()-1, today.getDate());
+            buildCalendar();
+        }
+
+        function nextCalendar(){
+            today = new Date(today.getFullYear(), today.getMonth()+1, today.getDate());
+            buildCalendar();
+        }
+
+        // 스토어
+        $(function(){
+            $('.food-button').click(function(){
+                $('.souvenir').fadeOut(0);
+                $('.food').fadeIn(1000);
+                $('.food-button').toggleClass('click')
+                $('.souvenir-button').removeClass('click')
+            });
+            $('.souvenir-button').click(function(){
+                $('.store-box').not('.souvenir').fadeOut(0);
+                $('.souvenir').fadeIn(1000);
+                $('.souvenir-button').toggleClass('click')
+                $('.food-button').removeClass('click')
+            });
+        });
     </script>
 </head>
 <body>
@@ -44,30 +160,208 @@
         <ul>
             <li></li>
         </ul>
-
         <div class="Ticketing">
             <div class="Ticketing-sub">
-                <h2>왕복 ▼</h2>
-                <h2>성인 ▼</h2>
+                <select name="" id="">
+                    <option value="">왕복</option>
+                    <option value="">편도</option>
+                    <option value="">다구간</option>
+                </select>
+                <select name="" id="">
+                    <option value="">성인</option>
+                    <option value="">소아</option>
+                    <option value="">유아</option>
+                </select>
+
                 <a href="#">보너스 항공권 예매</a>
             </div>
-            <div class="Ticketing-box">
+            <div class="Ticketing-box depart">
                 <h2>출발지</h2>
                 <h2>▼</h2>
             </div>
-            <div class="Ticketing-box">
+            <div class="Ticketing-box arrival">
                 <h2>도착지</h2>
                 <h2>▼</h2>
             </div>
-            <div class="Ticketing-box">
+            <div class="Ticketing-box daytogo">
                 <h2>가는날</h2>
                 <h2>▼</h2>
             </div>
-            <div class="Ticketing-box">
+            <div class="Ticketing-box comingday">
                 <h2>오는날</h2>
                 <h2>▼</h2>
             </div>
             <input type="submit" value="다음">
+            <!-- 출발선택 -->
+            <div class="depart-box hide Place">
+                <table>
+                    <tr>
+                        <th>한국</th>
+                        <th>동북아</th>
+                        <th>동남아</th>
+                        <th>대양주</th>
+                        <th>미주</th>
+                    </tr>
+                    <tr>
+                        <td>서울/인천(ICN)</td>
+                        <td>도쿄/나리타(NRT)</td>
+                        <td>방콕(BKK)</td>
+                        <td>괌(GUM)</td>
+                        <td>하와이,호놀룰룰(HNL)</td>
+                    </tr>
+                    <tr>
+                        <td>서울/김포(GMP)</td>
+                        <td>오사카/감사이(KIX)</td>
+                        <td>푸꼣(HKT)</td>
+                    </tr>
+                    <tr>
+                        <td>부산(PUS)</td>
+                        <td>후쿠오카(FUK)</td>
+                        <td>치앙마이(CNX)</td>
+                    </tr>                    <tr>
+                        <td>제주(CJU)</td>
+                        <td>삿포로(CTS)</td>
+                        <td>세부(CEB)</td>
+                    </tr>
+                    <tr>
+                        <td>청주(CJJ)</td>
+                        <td>오키나와(OKA)</td>
+                        <td>클락(CRK)</td>
+                    </tr>
+                    <tr>
+                        <td>광주(KWJ)</td>
+                        <td>기타쿠슈(KKJ)</td>
+                        <td>보라카이/칼리보(KLO)</td>
+                    </tr>
+                    <tr>
+                        <td>대구(TAE)</td>
+                        <td>상아이/푸동(PVG)</td>
+                        <td>다낭(DAD)</td>
+                    </tr>
+                    <tr>
+                        <td>여수(RSU)</td>
+                        <td>시안(XIY)</td>
+                        <td>하노이(HAN)</td>
+                    </tr>
+                    <tr>
+                        <td>울산(USN)</td>
+                        <td>홍콩(HKG)</td>
+                        <td>비엔티안(VTE)</td>
+                    </tr>
+                    <tr>
+                        <td>포항(KPO)</td>
+                        <td>마카오(MFM)</td>
+                        <td>코타 키나발루(BKI)</td>
+                    </tr>
+                    <tr>
+                        <td>원주(WJU)</td>
+                        <td>타이베이/타오위안(TPE)</td>
+                        <td>조호르바루(JHB)</td>
+                    </tr>
+                    <tr>
+                        <td>군산(KUV)</td>
+                        <td>칭다오(TAO)</td>
+                    </tr>
+                    <tr>
+                        <td>사천(HIN)</td>
+                    </tr>
+                </table>
+            </div>
+            <!-- 도착지 -->
+            <div class="arrival-box hide Place">
+                <table>
+                    <tr>
+                        <th>한국</th>
+                        <th>동북아</th>
+                        <th>동남아</th>
+                        <th>대양주</th>
+                        <th>미주</th>
+                    </tr>
+                    <tr>
+                        <td>서울/인천(ICN)</td>
+                        <td>도쿄/나리타(NRT)</td>
+                        <td>방콕(BKK)</td>
+                        <td>괌(GUM)</td>
+                        <td>하와이,호놀룰룰(HNL)</td>
+                    </tr>
+                    <tr>
+                        <td>서울/김포(GMP)</td>
+                        <td>오사카/감사이(KIX)</td>
+                        <td>푸꼣(HKT)</td>
+                    </tr>
+                    <tr>
+                        <td>부산(PUS)</td>
+                        <td>후쿠오카(FUK)</td>
+                        <td>치앙마이(CNX)</td>
+                    </tr>                    <tr>
+                        <td>제주(CJU)</td>
+                        <td>삿포로(CTS)</td>
+                        <td>세부(CEB)</td>
+                    </tr>
+                    <tr>
+                        <td>청주(CJJ)</td>
+                        <td>오키나와(OKA)</td>
+                        <td>클락(CRK)</td>
+                    </tr>
+                    <tr>
+                        <td>광주(KWJ)</td>
+                        <td>기타쿠슈(KKJ)</td>
+                        <td>보라카이/칼리보(KLO)</td>
+                    </tr>
+                    <tr>
+                        <td>대구(TAE)</td>
+                        <td>상아이/푸동(PVG)</td>
+                        <td>다낭(DAD)</td>
+                    </tr>
+                    <tr>
+                        <td>여수(RSU)</td>
+                        <td>시안(XIY)</td>
+                        <td>하노이(HAN)</td>
+                    </tr>
+                    <tr>
+                        <td>울산(USN)</td>
+                        <td>홍콩(HKG)</td>
+                        <td>비엔티안(VTE)</td>
+                    </tr>
+                    <tr>
+                        <td>포항(KPO)</td>
+                        <td>마카오(MFM)</td>
+                        <td>코타 키나발루(BKI)</td>
+                    </tr>
+                    <tr>
+                        <td>원주(WJU)</td>
+                        <td>타이베이/타오위안(TPE)</td>
+                        <td>조호르바루(JHB)</td>
+                    </tr>
+                    <tr>
+                        <td>군산(KUV)</td>
+                        <td>칭다오(TAO)</td>
+                    </tr>
+                    <tr>
+                        <td>사천(HIN)</td>
+                    </tr>
+                </table>
+            </div>
+            <!-- 가는날 -->
+            <div class="daytogo-box hide letsfly">
+                <table id="calendar">
+                    <tr>
+                        <td><label class="button" onclick="prevCalendar()"> ◀ </label></td>
+                        <td colspan="5" id="calendarTitle">yyyy년 m월</td>
+                        <td><label class="button" onclick="nextCalendar()"> ▶ </label></td>
+                    </tr>
+                    <tr class="week">
+                        <td class="Sunday">일</td>
+                        <td>월</td>
+                        <td>화</td>
+                        <td>수</td>
+                        <td>목</td>
+                        <td>금</td>
+                        <td class="Saturday">토</td>
+                    </tr>
+                    <script type="text/javascript">buildCalendar();</script>
+                </table>
+            </div>
         </div>
         
     </div>
@@ -109,12 +403,9 @@
         <div class="store-title">
             <h2>지니스토어</h2>
         </div>
-        <!-- 스토어 박스 -->
-        <div class="store-box">
-            <div class="photo">
-                <div class="photo-box"></div>
-                <div class="photo-box"></div> 
-            </div>
+        <!-- 음식 -->
+        <div class="store-box food">
+            <a href="#"><div class="photo-food"></div></a>
 
             <div class="store-text">
                 <h2>집에서 즐기는 기내식</h2>
@@ -156,6 +447,55 @@
                     </div>
                 </a>
             </div>
+        </div>
+        <!-- 기념품 -->
+        <div class="store-box souvenir">
+            <a href="#"><div class="photo-souvenir"></div></a>
+
+            <div class="store-text">
+                <h2>기내에서만 구매가능했던 굿즈를 여기에서도?</h2>
+                <a href="#">
+                    <div class="store-Goods">
+                        <div>
+                            <img src="img/main/지니스토어/모형.PNG" alt="">
+                        </div>
+                        
+                        <h3>다이캐스트 모형</h3>
+                        <p>40,000원</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="store-Goods">
+                        <div>
+                            <img src="img/main/지니스토어/인형.PNG" alt="">
+                        </div>
+                        <h3>X니니즈 키링</h3>
+                        <p>10,000원</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="store-Goods">
+                        <div>
+                            <img src="img/main/지니스토어/비행기.PNG" alt="">
+                        </div>
+                        <h3>미니 블럭항공기</h3>
+                        <p>25,000원</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="store-Goods">
+                        <div>
+                            <img src="img/main/지니스토어/모음.PNG" alt="">
+                        </div>
+                        <h3>X니니즈 트래블킷</h3>
+                        <p>25,000원</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="button-box">
+            <button class="food-button">기내식</button>
+            <button class="souvenir-button">굿즈</button>
         </div>
     </div>
     <!-- 이벤트 -->
@@ -301,7 +641,13 @@
         </div>
         <div id="language-outside">
             <div id="language">
-                <div class="language"><p>대한민국 ▼</p></div>
+                <select name="" id="">
+                    <option value=""><a href="#">한국(Korean) / KRW</a></option>
+                    <option value=""><a href="#">日本(日本語) / JPY</a></option>
+                    <option value=""><a href="#">USA(English) / USD</a></option>
+                    <option value=""><a href="#">中国(中文简体) / CNY</a></option>
+
+                </select>
                 <a href="#"><strong>한국어</strong></a>
                 <a href="#">English</a>
             </div>
