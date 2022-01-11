@@ -1,139 +1,305 @@
+@media(max-width:749.99px){
+
+}
+
+
+
+
+
+
+
+@media(min-width:750px) and (max-width:1199.99px) {
+
 /* 슬라이더 */
 #slider{width: 100%;height: 100%;position: relative;background-image:url(../img/main/pohto/배경3.png);
-background-position: center;background-size: cover;z-index: 3;}
-.slider-text{position: absolute;left: 50%;top:20%;transform:translateX(-50%);}
-.Ticketing{width: 800px; height: 180px;background-color: white;
-position: absolute; left: 50%;bottom: -90px; transform: translateX(-50%);
-display: flex; flex-direction: row;flex-wrap: wrap;justify-content: space-around;
-align-content: space-around;box-shadow: 5px 5px 20px 1px rgb(185, 185, 185);
-padding: 20px 20px;}
-
-.Ticketing-sub{width: 100%;margin-left: 10px;}
-.Ticketing-sub h2{display: inline-block;font-size: 15px;cursor: pointer;margin-right: 10px;}
-.Ticketing-sub select{font-size: 15px;font-weight: bold;border: none;}
-.Ticketing-box{width: 20%;height: 50px; border: solid rgb(226, 226, 226) 1px;
-padding: 14px 8px;cursor: pointer;box-shadow: 3px 3px 5px 0 rgb(226, 226, 226);}
-    /* 클릭시 클레스 */
-    .click{border: solid #c1d82e 1px;}
-    /* 호버시 보더 */
-    .Ticketing-box:hover{border: solid #c1d82e 1px;}
-.Ticketing-box h2{font-size: 15px;}
-.Ticketing-box h2:nth-of-type(1){float: left;}
-.Ticketing-box h2:nth-of-type(2){float: right;}
-.Ticketing input{width: 12%; background-color:#c1d82e;border: solid rgb(226, 226, 226) 1px;
-font-weight: bold;box-shadow: 3px 3px 5px 0 rgb(226, 226, 226);cursor: pointer;}
-
-.Ticketing .hide{width: 100%;position: absolute;top: 150px;z-index: 15;display: none;
-background-color: white;border: solid rgb(224, 224, 224) 1px;box-shadow: 3px 3px 5px 0 rgb(226, 226, 226)}
-.Ticketing .hide table{width: 100%;padding: 30px 30px;}
-.Ticketing .Place table th{text-align: left;font-size: 18px; color: saddlebrown;}
-.Ticketing .Place table td{padding-top: 5px; font-size: 13px; width: 20%;cursor: pointer;}
-.daytogo-box{display: block;}
-.Ticketing .letsfly table{width: 100%;text-align: center;}
-.Ticketing .letsfly td{padding: 10px 0;}
-#calendarTitle{font-size: 20px;font-weight: bold;}
-.button{cursor: pointer;}
-.week td{font-size: 18px;}
-.Sunday{color: red;}
-.Saturday{color: rgb(0, 110, 255);}
-/* 매뉴박스 */
-#menu{width: 1100px;height: auto;display: flex;margin: 0 auto;
-flex-direction: row;flex-wrap: wrap;justify-content: space-between;
-align-content: space-between;padding-top: 150px;margin-bottom: 100px;}
-#menu .title{width: 100%;font-size: 23px;margin-bottom: 30px;}
-#menu a{height: 355px;width: 23.5%}
-#menu .menu-box{height: 100%;width: 100%;background-size: cover;
-position: relative; color: white; background-position: center;
-transition: 0.4s;z-index: 1;}
-#menu .menu-box h3{position: absolute;top: 30px;left: 30px;
-text-shadow: 0 0 5px black;}
-#menu .menu-box p{position: absolute;bottom: 30px;left: 30px;}
-    /* 매뉴박스 사진 */
-    #menu a:nth-of-type(1) .menu-box{background-image:url(../img/main/서비스메뉴/번들-hover.jpg);}
-    #menu a:nth-of-type(2) .menu-box{background-image:url(../img/main/서비스메뉴/좌석-hover.jpg);}
-    #menu a:nth-of-type(3) .menu-box{background-image:url(../img/main/서비스메뉴/수하물-hover.jpg);}
-    #menu a:nth-of-type(4) .menu-box{background-image:url(../img/main/서비스메뉴/랜터카-hover.jpg);}
-    /* 메뉴박스 호버 */
-    #menu a:nth-of-type(1) .menu-box:hover{background-image:url(../img/main/서비스메뉴/번들.jpg);}
-    #menu a:nth-of-type(2) .menu-box:hover{background-image:url(../img/main/서비스메뉴/좌석.png);}
-    #menu a:nth-of-type(3) .menu-box:hover{background-image:url(../img/main/서비스메뉴/수하물.png);}
-    #menu a:nth-of-type(4) .menu-box:hover{background-image:url(../img/main/서비스메뉴/랜터카.png);}    
-
-/* 스토어 */
-#store{width: 100%; height: 550px;
-margin: 0 auto;position: relative;margin-bottom: 200px;}
-.store-title{width: 1100px;margin: 0 auto;
-font-size: 23px;margin-bottom: 30px;}
-#store .photo-food{width: 50%;height: 100%;background-image:url(../img/main/지니스토어/음식.png);
-background-size: cover;background-position: center;float: left;}
-#store .store-box{width: 1100px;height: 100%;margin: 0 auto;
-}
-.store-text{float: right;width: 47%;height: 100%;display: flex;
- flex-wrap: wrap;flex-direction: row;
-justify-content: space-between;align-content: space-between;}
-.store-text h2{width: 100%;}
-.store-text a{width: 45%;height: 220px;display: inline-block;}
-.store-Goods img{width: 100%;transition: 0.4s;}
-.store-Goods:hover img{transform: scale(1.1);}
-.store-Goods div{overflow: hidden;}
-
-#store .souvenir{display: none;}
-#store .photo-souvenir{width: 50%;height: 100%;background-image:url(../img/main/지니스토어/물건.png);
+    background-position: center;background-size: cover;z-index: 3;}
+    .slider-text{position: absolute;left: 50%;top:20%;transform:translateX(-50%);}
+    .Ticketing{width: 95%; height: auto;background-color: white;
+    position: absolute; left: 50%;bottom: -150px; transform: translateX(-50%);
+    display: flex; flex-direction: row;flex-wrap: wrap;justify-content: space-around;
+    align-content: space-around;box-shadow: 5px 5px 20px 1px rgb(185, 185, 185);
+    padding: 40px 40px;}
+    
+    .Ticketing-sub{width: 100%;margin-left: 10px;margin-bottom: 20px;}
+    .Ticketing-sub h2{display: inline-block;font-size: 15px;cursor: pointer;margin-right: 10px;}
+    .Ticketing-sub select{font-size: 15px;font-weight: bold;border: none;}
+    .Ticketing-box{width: 45%;height: 50px; border: solid rgb(226, 226, 226) 1px;
+    padding: 14px 8px;cursor: pointer;box-shadow: 3px 3px 5px 0 rgb(226, 226, 226);
+    margin: 10px;}
+        /* 클릭시 클레스 */
+        .click{border: solid #c1d82e 1px;}
+        /* 호버시 보더 */
+        .Ticketing-box:hover{border: solid #c1d82e 1px;}
+    .Ticketing-box h2{font-size: 15px;}
+    .Ticketing-box h2:nth-of-type(1){float: left;}
+    .Ticketing-box h2:nth-of-type(2){float: right;}
+    .Ticketing input{width: 40%; height: 50px; background-color:#c1d82e;border: solid rgb(226, 226, 226) 1px;
+    font-weight: bold;box-shadow: 3px 3px 5px 0 rgb(226, 226, 226);cursor: pointer;}
+    
+    .Ticketing .hide{width: 100%;position: absolute;top: 150px;z-index: 15;display: none;
+    background-color: white;border: solid rgb(224, 224, 224) 1px;box-shadow: 3px 3px 5px 0 rgb(226, 226, 226)}
+    .Ticketing .hide table{width: 100%;padding: 30px 30px;}
+    .Ticketing .Place table th{text-align: left;font-size: 18px; color: saddlebrown;}
+    .Ticketing .Place table td{padding-top: 5px; font-size: 13px; width: 20%;cursor: pointer;}
+    .daytogo-box{display: block;}
+    .Ticketing .letsfly table{width: 100%;text-align: center;}
+    .Ticketing .letsfly td{padding: 10px 0; cursor: pointer;}
+    .Ticketing .letsfly th{padding: 10px 0;}
+    #calendarTitle{font-size: 20px;font-weight: bold;}
+    #ww{font-size: 20px;}
+    .button{cursor: pointer;}
+    .week th{font-size: 18px;}
+    .Sunday{color: red;}
+    .Saturday{color: rgb(0, 110, 255);}
+    /* 매뉴박스 */
+    #menu{width: 95%;height: auto;display: flex;margin: 0 auto;
+    flex-direction: row;flex-wrap: wrap;justify-content: space-between;
+    align-content: space-between;padding-top: 270px;margin-bottom: 100px;}
+    #menu .title{width: 100%;font-size: 23px;margin-bottom: 30px;}
+    #menu a{height: 355px;width: 23.5%}
+    #menu .menu-box{height: 100%;width: 100%;background-size: cover;
+    position: relative; color: white; background-position: center;
+    transition: 0.4s;z-index: 1;}
+    #menu .menu-box h3{position: absolute;top: 30px;left: 20px;
+    text-shadow: 0 0 5px black;}
+    #menu .menu-box p{position: absolute;bottom: 30px;left: 20px;}
+        /* 매뉴박스 사진 */
+        #menu a:nth-of-type(1) .menu-box{background-image:url(../img/main/서비스메뉴/번들-hover.jpg);}
+        #menu a:nth-of-type(2) .menu-box{background-image:url(../img/main/서비스메뉴/좌석-hover.jpg);}
+        #menu a:nth-of-type(3) .menu-box{background-image:url(../img/main/서비스메뉴/수하물-hover.jpg);}
+        #menu a:nth-of-type(4) .menu-box{background-image:url(../img/main/서비스메뉴/랜터카-hover.jpg);}
+        /* 메뉴박스 호버 */
+        #menu a:nth-of-type(1) .menu-box:hover{background-image:url(../img/main/서비스메뉴/번들.jpg);}
+        #menu a:nth-of-type(2) .menu-box:hover{background-image:url(../img/main/서비스메뉴/좌석.png);}
+        #menu a:nth-of-type(3) .menu-box:hover{background-image:url(../img/main/서비스메뉴/수하물.png);}
+        #menu a:nth-of-type(4) .menu-box:hover{background-image:url(../img/main/서비스메뉴/랜터카.png);}    
+    
+    /* 스토어 */
+    #store{width: 95%; height: auto;
+    margin: 0 auto;position: relative;margin-bottom: 130px;}
+    .store-title{width: 100%;margin: 0 auto;
+    font-size: 23px;margin-bottom: 30px;}
+    #store .photo-food{width: 93vw;height:40vw;background-image:url(../img/main/지니스토어/음식.png);
     background-size: cover;background-position: center;float: left;}
+    #store .store-box{width: 100%;height: 100%;margin: 0 auto;
+    }
+    .store-text{width: 100%;height: 100%;display: flex;padding-top: 50px;
+     flex-wrap: wrap;flex-direction: row;
+    justify-content: space-between;align-content: space-around;}
+    .store-text h2{width: 100%;display: none;}
+    .store-text a{width: 48%;height: auto;display: inline-block;margin-bottom: 30px;}
+    .store-Goods img{width: 100%;transition: 0.4s;}
+    .store-Goods:hover img{transform: scale(1.1);}
+    .store-Goods div{overflow: hidden;}
+    
+    #store .souvenir{display: none;}
+    #store .photo-souvenir{width: 93vw;height:40vw;background-image:url(../img/main/지니스토어/물건.png);
+        background-size: cover;background-position: center;float: left;}
+    
+    .store-text img{width: 100%; height: 30vw;}
+    
+    .button-box{margin: 0 auto;width: 150px;}
+    .button-box button{width: 70px; height: 30px; border-radius: 20px; cursor: pointer;
+    margin-top: 30px;font-weight: bold;transition: 0.4s;border: solid rgb(160, 160, 160) 1px;}
+    .button-box button:hover{background-color: #c1d82e;}
+    
+    #store .click{background-color: #c1d82e;}
+    /* 이벤트 */
+    #event{width: 100%; height: 40vw; background-color: cyan;overflow: hidden;}
+    #event ul{width: 500%;height: 100%;background-color: darkblue;}
+    #event li{width: 20%;height: 100%;float: left;}
+    #event div{width: 100%;height: 100%;background-position: center;
+    background-size: contain;margin: 0 auto;background-repeat: no-repeat;}
+    .event1{background-color:#202020;}
+        .event1 div{background-image: url(../img/main/event/event1.jpg);}
+    .event2{background-color:#ee4037;}
+        .event2 div{background-image: url(../img/main/event/event2.jpg);}
+    .event3{background-color:#430081;}
+        .event3 div{background-image: url(../img/main/event/event3.jpg);}
+    .event4{background-color:#01bccb;}
+        .event4 div{background-image: url(../img/main/event/event4.jpg);}
+    .event5{background-color:#020b34;}
+        .event5 div{background-image: url(../img/main/event/event5.jpg);}
+    
+    /* 최저가 국내선 */
+    #yeohaeng{width: 100%;height: auto;margin-top: 100px;margin-top: 100px;}
+    .yeohaeng-text{width: 95%;height: auto;margin: 0 auto;
+     font-size: 25px;}
+    .yeohaeng-text h2{margin-bottom: 20px;}
+    #yeohaeng a{width: 45vw;height: 22vw;overflow: hidden;box-shadow: 10px 10px 20px 2px gray;
+    display: inline-block;margin-bottom: 3%;position: relative;}
+    .yeohaeng-photo{width: 95%;height: 45vw;margin-top: 40px;margin: 0 auto; display: flex;
+    flex-direction: row;flex-wrap: wrap;justify-content: space-between;align-content: space-between;
+    margin-top: 20px;}
+    #yeohaeng .photo:hover{transform: scale(1.1);}
+    #yeohaeng .photo{width: 100%;height: 100%;background-position: center;background-size: cover;
+    transition: 0.4s;position: relative;}
+    #yeohaeng .text{position: absolute;right: 20px;bottom: 20px;}
+    #yeohaeng .text h3{font-size: 18px;margin-bottom: 10px;
+    color: white; text-shadow: 0 0 3px black;}
+    #yeohaeng .text p{font-size: 13px;color: white;text-shadow: 0 0 3px black;}
+        
+        /* 사진들 */
+        #yeohaeng a:nth-of-type(1) .photo{background-image: url(../img/main/여행지/제주도.jpg);}
+        #yeohaeng a:nth-of-type(2) .photo{background-image: url(../img/main/여행지/부산.jpg);}
+        #yeohaeng a:nth-of-type(3) .photo{background-image: url(../img/main/여행지/여수.jpg);}
+        #yeohaeng a:nth-of-type(4) .photo{background-image: url(../img/main/여행지/포항.jpg);}
+        #yeohaeng a:nth-of-type(5) .photo{background-image: url(../img/main/여행지/광주.jpg);}
+        #yeohaeng a:nth-of-type(6) .photo{background-image: url(../img/main/여행지/제주도2.jpg);}
+    .background{width: 100%;height: 600px;background-image: url(../img/main/배경.jpg);
+        background-position: center;background-size: cover;}
+}
 
-.store-text img{width: 232.64px; height: 168.52px;}
 
-.button-box{margin: 0 auto;width: 150px;}
-.button-box button{width: 70px; height: 30px; border-radius: 20px; cursor: pointer;
-margin-top: 30px;font-weight: bold;transition: 0.4s;border: solid rgb(160, 160, 160) 1px;}
-.button-box button:hover{background-color: #c1d82e;}
+    
 
-#store .click{background-color: #c1d82e;}
-/* 이벤트 */
-#event{width: 100%; height: 460px; background-color: cyan;overflow: hidden;}
-#event ul{width: 500%;height: 100%;background-color: darkblue;}
-#event li{width: 20%;height: 100%;float: left;}
-#event div{width: 1100px;height: 100%;background-position: center;
-background-size: contain;margin: 0 auto;}
-.event1{background-color:#202020;}
-    .event1 div{background-image: url(../img/main/event/event1.jpg);}
-.event2{background-color:#ee4037;}
-    .event2 div{background-image: url(../img/main/event/event2.jpg);}
-.event3{background-color:#430081;}
-    .event3 div{background-image: url(../img/main/event/event3.jpg);}
-.event4{background-color:#01bccb;}
-    .event4 div{background-image: url(../img/main/event/event4.jpg);}
-.event5{background-color:#020b34;}
-    .event5 div{background-image: url(../img/main/event/event5.jpg);}
 
-/* 최저가 국내선 */
-#yeohaeng{width: 100%;height: auto;margin-top: 100px;}
-.yeohaeng-text{width: 1100px;height: auto;margin: 0 auto;
- font-size: 25px;}
-.yeohaeng-text h2{margin-bottom: 20px;}
-#yeohaeng a{position: absolute;width: 23%;height: 300px;overflow: hidden;box-shadow: 10px 10px 20px 2px gray;}
-.yeohaeng-photo{width: 100%;height: 500px;margin-top: -70px;
-position: relative;}
-#yeohaeng .photo:hover{transform: scale(1.1);}
-#yeohaeng .photo{width: 100%;height: 100%;background-position: center;background-size: cover;
-transition: 0.4s;position: relative;}
-#yeohaeng .text{position: absolute;right: 40px;bottom: 40px;}
-#yeohaeng .text h3{font-size: 21px;margin-bottom: 10px;
-color: white; text-shadow: 0 0 3px black;}
-#yeohaeng .text p{font-size: 15px;color: white;text-shadow: 0 0 3px black;}
-    /* 사진 포지션 */
-    #yeohaeng a:nth-of-type(1){top: 250px;left: 1.5%;;}
-    #yeohaeng a:nth-of-type(2){top: 155px;left:26.2%;}
-    #yeohaeng a:nth-of-type(3){top: 485px;left:26.2%;}
-    #yeohaeng a:nth-of-type(4){top: 0;right:26.2%;}
-    #yeohaeng a:nth-of-type(5){top: 330px;right:26.2%;}
-    #yeohaeng a:nth-of-type(6){top: 145px;right:1.5%}
-    /* 사진들 */
-    #yeohaeng a:nth-of-type(1) .photo{background-image: url(../img/main/여행지/제주도.jpg);}
-    #yeohaeng a:nth-of-type(2) .photo{background-image: url(../img/main/여행지/부산.jpg);}
-    #yeohaeng a:nth-of-type(3) .photo{background-image: url(../img/main/여행지/여수.jpg);}
-    #yeohaeng a:nth-of-type(4) .photo{background-image: url(../img/main/여행지/포항.jpg);}
-    #yeohaeng a:nth-of-type(5) .photo{background-image: url(../img/main/여행지/광주.jpg);}
-    #yeohaeng a:nth-of-type(6) .photo{background-image: url(../img/main/여행지/제주도2.jpg);}
-.background{width: 100%;height: 600px;background-image: url(../img/main/배경.jpg);
-    background-position: center;background-size: cover;}
+
+
+
+
+@media(min-width:1200px){
+/* 슬라이더 */
+#slider{width: 100%;height: 100%;position: relative;background-image:url(../img/main/pohto/배경3.png);
+    background-position: center;background-size: cover;z-index: 3;}
+    .slider-text{position: absolute;left: 50%;top:20%;transform:translateX(-50%);}
+    .Ticketing{width: 1000px; height: 180px;background-color: white;
+    position: absolute; left: 50%;bottom: -90px; transform: translateX(-50%);
+    display: flex; flex-direction: row;flex-wrap: wrap;justify-content: space-around;
+    align-content: space-around;box-shadow: 5px 5px 20px 1px rgb(185, 185, 185);
+    padding: 20px 20px;}
+    
+    .Ticketing-sub{width: 100%;margin-left: 10px;}
+    .Ticketing-sub h2{display: inline-block;font-size: 15px;cursor: pointer;margin-right: 10px;}
+    .Ticketing-sub select{font-size: 15px;font-weight: bold;border: none;}
+    .Ticketing-box{width: 20%;height: 50px; border: solid rgb(226, 226, 226) 1px;
+    padding: 14px 8px;cursor: pointer;box-shadow: 3px 3px 5px 0 rgb(226, 226, 226);}
+        /* 클릭시 클레스 */
+        .click{border: solid #c1d82e 1px;}
+        /* 호버시 보더 */
+        .Ticketing-box:hover{border: solid #c1d82e 1px;}
+    .Ticketing-box h2{font-size: 15px;}
+    .Ticketing-box h2:nth-of-type(1){float: left;}
+    .Ticketing-box h2:nth-of-type(2){float: right;}
+    .Ticketing input{width: 12%; background-color:#c1d82e;border: solid rgb(226, 226, 226) 1px;
+    font-weight: bold;box-shadow: 3px 3px 5px 0 rgb(226, 226, 226);cursor: pointer;}
+    
+    .Ticketing .hide{width: 100%;position: absolute;top: 150px;z-index: 15;display: none;
+    background-color: white;border: solid rgb(224, 224, 224) 1px;box-shadow: 3px 3px 5px 0 rgb(226, 226, 226)}
+    .Ticketing .hide table{width: 100%;padding: 30px 30px;}
+    .Ticketing .Place table th{text-align: left;font-size: 18px; color: saddlebrown;}
+    .Ticketing .Place table td{padding-top: 5px; font-size: 13px; width: 20%;cursor: pointer;}
+    .daytogo-box{display: block;}
+    .Ticketing .letsfly table{width: 100%;text-align: center;}
+    .Ticketing .letsfly td{padding: 10px 0; cursor: pointer;}
+    .Ticketing .letsfly th{padding: 10px 0;}
+    #calendarTitle{font-size: 20px;font-weight: bold;}
+    #ww{font-size: 20px;}
+    .button{cursor: pointer;}
+    .week th{font-size: 18px;}
+    .Sunday{color: red;}
+    .Saturday{color: rgb(0, 110, 255);}
+    /* 매뉴박스 */
+    #menu{width: 1100px;height: auto;display: flex;margin: 0 auto;
+    flex-direction: row;flex-wrap: wrap;justify-content: space-between;
+    align-content: space-between;padding-top: 150px;margin-bottom: 100px;}
+    #menu .title{width: 100%;font-size: 23px;margin-bottom: 30px;}
+    #menu a{height: 355px;width: 23.5%}
+    #menu .menu-box{height: 100%;width: 100%;background-size: cover;
+    position: relative; color: white; background-position: center;
+    transition: 0.4s;z-index: 1;}
+    #menu .menu-box h3{position: absolute;top: 30px;left: 30px;
+    text-shadow: 0 0 5px black;}
+    #menu .menu-box p{position: absolute;bottom: 30px;left: 30px;}
+        /* 매뉴박스 사진 */
+        #menu a:nth-of-type(1) .menu-box{background-image:url(../img/main/서비스메뉴/번들-hover.jpg);}
+        #menu a:nth-of-type(2) .menu-box{background-image:url(../img/main/서비스메뉴/좌석-hover.jpg);}
+        #menu a:nth-of-type(3) .menu-box{background-image:url(../img/main/서비스메뉴/수하물-hover.jpg);}
+        #menu a:nth-of-type(4) .menu-box{background-image:url(../img/main/서비스메뉴/랜터카-hover.jpg);}
+        /* 메뉴박스 호버 */
+        #menu a:nth-of-type(1) .menu-box:hover{background-image:url(../img/main/서비스메뉴/번들.jpg);}
+        #menu a:nth-of-type(2) .menu-box:hover{background-image:url(../img/main/서비스메뉴/좌석.png);}
+        #menu a:nth-of-type(3) .menu-box:hover{background-image:url(../img/main/서비스메뉴/수하물.png);}
+        #menu a:nth-of-type(4) .menu-box:hover{background-image:url(../img/main/서비스메뉴/랜터카.png);}    
+    
+    /* 스토어 */
+    #store{width: 100%; height: 550px;
+    margin: 0 auto;position: relative;margin-bottom: 200px;}
+    .store-title{width: 1100px;margin: 0 auto;
+    font-size: 23px;margin-bottom: 30px;}
+    #store .photo-food{width: 50%;height: 100%;background-image:url(../img/main/지니스토어/음식.png);
+    background-size: cover;background-position: center;float: left;}
+    #store .store-box{width: 1100px;height: 100%;margin: 0 auto;
+    }
+    .store-text{float: right;width: 47%;height: 100%;display: flex;
+     flex-wrap: wrap;flex-direction: row;
+    justify-content: space-between;align-content: space-between;}
+    .store-text h2{width: 100%;}
+    .store-text a{width: 45%;height: 220px;display: inline-block;}
+    .store-Goods img{width: 100%;transition: 0.4s;}
+    .store-Goods:hover img{transform: scale(1.1);}
+    .store-Goods div{overflow: hidden;}
+    
+    #store .souvenir{display: none;}
+    #store .photo-souvenir{width: 50%;height: 100%;background-image:url(../img/main/지니스토어/물건.png);
+        background-size: cover;background-position: center;float: left;}
+    
+    .store-text img{width: 232.64px; height: 168.52px;}
+    
+    .button-box{margin: 0 auto;width: 150px;}
+    .button-box button{width: 70px; height: 30px; border-radius: 20px; cursor: pointer;
+    margin-top: 30px;font-weight: bold;transition: 0.4s;border: solid rgb(160, 160, 160) 1px;}
+    .button-box button:hover{background-color: #c1d82e;}
+    
+    #store .click{background-color: #c1d82e;}
+    /* 이벤트 */
+    #event{width: 100%; height: 460px; background-color: cyan;overflow: hidden;}
+    #event ul{width: 500%;height: 100%;background-color: darkblue;}
+    #event li{width: 20%;height: 100%;float: left;}
+    #event div{width: 1100px;height: 100%;background-position: center;
+    background-size: contain;margin: 0 auto;}
+    .event1{background-color:#202020;}
+        .event1 div{background-image: url(../img/main/event/event1.jpg);}
+    .event2{background-color:#ee4037;}
+        .event2 div{background-image: url(../img/main/event/event2.jpg);}
+    .event3{background-color:#430081;}
+        .event3 div{background-image: url(../img/main/event/event3.jpg);}
+    .event4{background-color:#01bccb;}
+        .event4 div{background-image: url(../img/main/event/event4.jpg);}
+    .event5{background-color:#020b34;}
+        .event5 div{background-image: url(../img/main/event/event5.jpg);}
+    
+    /* 최저가 국내선 */
+    #yeohaeng{width: 100%;height: auto;margin-top: 100px;}
+    .yeohaeng-text{width: 1100px;height: auto;margin: 0 auto;
+     font-size: 25px;}
+    .yeohaeng-text h2{margin-bottom: 20px;}
+    #yeohaeng a{position: absolute;width: 23%;height: 300px;overflow: hidden;box-shadow: 10px 10px 20px 2px gray;}
+    .yeohaeng-photo{width: 100%;height: 500px;margin-top: -70px;
+    position: relative;}
+    #yeohaeng .photo:hover{transform: scale(1.1);}
+    #yeohaeng .photo{width: 100%;height: 100%;background-position: center;background-size: cover;
+    transition: 0.4s;position: relative;}
+    #yeohaeng .text{position: absolute;right: 40px;bottom: 40px;}
+    #yeohaeng .text h3{font-size: 21px;margin-bottom: 10px;
+    color: white; text-shadow: 0 0 3px black;}
+    #yeohaeng .text p{font-size: 15px;color: white;text-shadow: 0 0 3px black;}
+        /* 사진 포지션 */
+        #yeohaeng a:nth-of-type(1){top: 250px;left: 1.5%;;}
+        #yeohaeng a:nth-of-type(2){top: 155px;left:26.2%;}
+        #yeohaeng a:nth-of-type(3){top: 485px;left:26.2%;}
+        #yeohaeng a:nth-of-type(4){top: 0;right:26.2%;}
+        #yeohaeng a:nth-of-type(5){top: 330px;right:26.2%;}
+        #yeohaeng a:nth-of-type(6){top: 145px;right:1.5%}
+        /* 사진들 */
+        #yeohaeng a:nth-of-type(1) .photo{background-image: url(../img/main/여행지/제주도.jpg);}
+        #yeohaeng a:nth-of-type(2) .photo{background-image: url(../img/main/여행지/부산.jpg);}
+        #yeohaeng a:nth-of-type(3) .photo{background-image: url(../img/main/여행지/여수.jpg);}
+        #yeohaeng a:nth-of-type(4) .photo{background-image: url(../img/main/여행지/포항.jpg);}
+        #yeohaeng a:nth-of-type(5) .photo{background-image: url(../img/main/여행지/광주.jpg);}
+        #yeohaeng a:nth-of-type(6) .photo{background-image: url(../img/main/여행지/제주도2.jpg);}
+    .background{width: 100%;height: 600px;background-image: url(../img/main/배경.jpg);
+        background-position: center;background-size: cover;}
+}
+
+
