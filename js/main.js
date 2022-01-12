@@ -94,6 +94,15 @@
             cell = row.insertCell();
         }
     }
+    // 달력 날자 클릭
+    $(function(){
+        $('#calendar td').click(function(){
+            $('.daytogo h2:nth-of-type(1)').text(calendarTitle.innerHTML+this.innerHTML+"일");
+            $('.daytogo-box').slideUp();
+            $('.daytogo h2:nth-of-type(2)').text("");
+            $('.daytogo').removeClass('click')
+        });
+    });
     }
 
     function prevCalendar(){
@@ -164,6 +173,16 @@
             cell = row.insertCell();
         }
     }
+    // 달력 날자 클릭
+    $(function(){
+        $('#qq td').click(function(){
+            $('.comingday h2:nth-of-type(1)').text(calendarTitle.innerHTML+this.innerHTML+"일");
+            $('.comingday-box').slideUp();
+            $('.comingday h2:nth-of-type(2)').text("");
+            $('.comingday').removeClass('click')
+        });
+    });
+
     }
 
     function ppp(){
@@ -194,35 +213,45 @@
 
     // 예매 버튼
     $(function(){
-        $('.depart-box table td').click(function(){
+        $('.depart-box .main-li li').click(function(){
             $('.depart h2:nth-of-type(1)').text(this.innerHTML);
             $('.depart h2:nth-of-type(2)').text("");
             $('.depart-box').slideUp();
             $('.depart').removeClass('click')
+            $('.depart-box .main-li li').slideUp();
         });
     });
     $(function(){
-        $('.arrival-box table td').click(function(){
+        $('.arrival-box .main-li li').click(function(){
             $('.arrival h2:nth-of-type(1)').text(this.innerHTML);
             $('.arrival-box').slideUp();
             $('.arrival h2:nth-of-type(2)').text("");
             $('.arrival').removeClass('click')
-        });
-    });
-    $(function(){
-        $('#calendar td').click(function(){
-            $('.daytogo h2:nth-of-type(1)').text(calendarTitle.innerHTML+this.innerHTML+"일");
-            $('.daytogo-box').slideUp();
-            $('.daytogo h2:nth-of-type(2)').text("");
-            $('.daytogo').removeClass('click')
-        });
-    });
-    $(function(){
-        $('#qq td').click(function(){
-            $('.comingday h2:nth-of-type(1)').text(calendarTitle.innerHTML+this.innerHTML+"일");
-            $('.comingday-box').slideUp();
-            $('.comingday h2:nth-of-type(2)').text("");
-            $('.comingday').removeClass('click')
+            $('.depart-box .main-li li').slideUp();
         });
     });
 
+    
+    $(function(){
+        $('.hide .Korean p').click(function(){
+            $('.hide .Korean li').slideToggle();
+            $('.hide .main-li li').not('.Korean li').slideUp();
+        });
+        $('.hide .Northeast_Asia p').click(function(){
+            $('.hide .Northeast_Asia li').slideToggle();
+            $('.hide .main-li li').not('.Northeast_Asia li').slideUp();
+        });
+        $('.hide .Southeast_Asia p').click(function(){
+            $('.hide .Southeast_Asia li').slideToggle();
+            $('.hidex .main-li li').not('.Southeast_Asia li').slideUp();
+        });
+        $('.hide .Oceania p').click(function(){
+            $('.hide .Oceania li').slideToggle();
+            $('.hide .main-li li').not('.Oceania li').slideUp();
+        });
+        $('.hide .Americas p').click(function(){
+            $('.hide .Americas li').slideToggle();
+            $('.hide .main-li li').not('.Americas li').slideUp();
+        });
+
+    });

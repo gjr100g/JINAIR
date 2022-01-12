@@ -18,16 +18,83 @@
             <img src="img/common/로고/로고2.png" alt="logo">
         </a>
         <nav>
-            <a href="#">예약</a>
-            <a href="#">서비스</a>
-            <a href="#">혜택</a>
-            <a href="#">나비포인트</a>
-            <a href="#">지니스토리</a>
+            <div class="menu">
+                <a href="#">예약</a>
+                <a href="#">서비스</a>
+                <a href="#">혜택</a>
+                <a href="#">나비포인트</a>
+                <a href="#">지니스토리</a> 
+            </div>
+
+            <div id="nav-right">
+                <a href="#"><img src="img/common/아이콘/독보기.png" alt=""> 검색</a>
+                <a href="#">로그인</a>
+            </div>
         </nav>
-        <div id="nav-right">
-            <a href="#"><img src="img/common/아이콘/독보기.png" alt=""> 검색</a>
-            <a href="#">로그인</a>
+        <div id="mobile-menu">
+            <img src="img/main/icon/햄버거.png" alt="hamburger">
+            <a href="#">
+                <img src="img/main/icon/btn_jaid.png" alt="">
+            </a>
+
         </div>
+        <div class="mobile-nav">
+            <select name="" id="">
+                <option value=""><a href="#">한국(Korean) / KRW</a></option>
+                <option value=""><a href="#">日本(日本語) / JPY</a></option>
+                <option value=""><a href="#">USA(English) / USD</a></option>
+                <option value=""><a href="#">中国(中文简体) / CNY</a></option>
+            </select>
+            <span>x</span>
+            <div class="login">
+                <button>회원가입</button>
+                <button>로그인</button>
+            </div>
+            <div class="main">
+                <h2>예약</h2>
+                <h2>서비스</h2>
+                <h2>혜택</h2>
+                <h2>나비포인트</h2>
+                <h2>지니스토어</h2>
+            </div>
+            <div class="sub">
+                <div class="reservation">
+                    <ul>
+                        <li><a href="#" class="stron">항공원 예약</a></li>
+                        <li><a href="#">예약</a></li>
+                        <li><a href="#">최저가 항공권</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#" class="stron">나의 예약</a></li>
+                        <li><a href="#">예약 조회/변경/취소</a></li>
+                        <li><a href="#">부가서비스 신청/취소</a></li>
+                        <li><a href="#">웹/모바일 체크인</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#" class="stron">운항 정보</a></li>
+                        <li><a href="#">스케줄 조회</a></li>
+                        <li><a href="#">출도착 안내</a></li>
+                        <li><a href="#">취항 노선 안내</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#" class="stron">예약 및 운임 안내</a></li>
+                        <li><a href="#">예매 서비스</a></li>
+                        <li><a href="#">국내선 운임</a></li>
+                        <li><a href="#">국제선 운임</a></li>
+                        <li><a href="#">비즈니스 운임</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#" class="stron">할인안내</a></li>
+                        <li><a href="#">가족운임 할인제도</a></li>
+                        <li><a href="#">상용우대 프로그램</a></li>
+                        <li><a href="#">제주도민 할인제도</a></li>
+                        <li><a href="#">재외/명예도민 할인제도</a></li>
+                        <li><a href="#">군산시민 할인제도</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
     </header>
     
 
@@ -70,153 +137,141 @@
             <input type="submit" value="다음">
             <!-- 출발선택 -->
             <div class="depart-box hide Place">
-                <table>
-                    <tr>
-                        <th>한국</th>
-                        <th>동북아</th>
-                        <th>동남아</th>
-                        <th>대양주</th>
-                        <th>미주</th>
-                    </tr>
-                    <tr>
-                        <td>서울/인천(ICN)</td>
-                        <td>도쿄/나리타(NRT)</td>
-                        <td>방콕(BKK)</td>
-                        <td>괌(GUM)</td>
-                        <td>하와이,호놀룰룰(HNL)</td>
-                    </tr>
-                    <tr>
-                        <td>서울/김포(GMP)</td>
-                        <td>오사카/감사이(KIX)</td>
-                        <td>푸꼣(HKT)</td>
-                    </tr>
-                    <tr>
-                        <td>부산(PUS)</td>
-                        <td>후쿠오카(FUK)</td>
-                        <td>치앙마이(CNX)</td>
-                    </tr>                    <tr>
-                        <td>제주(CJU)</td>
-                        <td>삿포로(CTS)</td>
-                        <td>세부(CEB)</td>
-                    </tr>
-                    <tr>
-                        <td>청주(CJJ)</td>
-                        <td>오키나와(OKA)</td>
-                        <td>클락(CRK)</td>
-                    </tr>
-                    <tr>
-                        <td>광주(KWJ)</td>
-                        <td>기타쿠슈(KKJ)</td>
-                        <td>보라카이/칼리보(KLO)</td>
-                    </tr>
-                    <tr>
-                        <td>대구(TAE)</td>
-                        <td>상아이/푸동(PVG)</td>
-                        <td>다낭(DAD)</td>
-                    </tr>
-                    <tr>
-                        <td>여수(RSU)</td>
-                        <td>시안(XIY)</td>
-                        <td>하노이(HAN)</td>
-                    </tr>
-                    <tr>
-                        <td>울산(USN)</td>
-                        <td>홍콩(HKG)</td>
-                        <td>비엔티안(VTE)</td>
-                    </tr>
-                    <tr>
-                        <td>포항(KPO)</td>
-                        <td>마카오(MFM)</td>
-                        <td>코타 키나발루(BKI)</td>
-                    </tr>
-                    <tr>
-                        <td>원주(WJU)</td>
-                        <td>타이베이/타오위안(TPE)</td>
-                        <td>조호르바루(JHB)</td>
-                    </tr>
-                    <tr>
-                        <td>군산(KUV)</td>
-                        <td>칭다오(TAO)</td>
-                    </tr>
-                    <tr>
-                        <td>사천(HIN)</td>
-                    </tr>
-                </table>
+                <ul class="main-ul">
+                    <li class="main-li Korean">
+                        <p>한국 <strong>▼</strong></p>
+                        <ul>
+                            <li>서울/인천(ICN)</li>
+                            <li>서울/김포(GMP)</li>
+                            <li>부산(PUS)</li>
+                            <li>제주(CJU)</li>
+                            <li>청주(CJJ)</li>
+                            <li>광주(KWJ)</li>
+                            <li>대구(TAE)</li>
+                            <li>여수(RSU)</li>
+                            <li>울산(USN)</li>
+                            <li>포항(KPO)</li>
+                            <li>원주(WJU)</li>
+                            <li>군산(KUV)</li>
+                            <li>사천(HIN)</li>
+                        </ul>
+                    </li>
+                    <li class="main-li Northeast_Asia">
+                        <p>동북아 <strong>▼</strong></p>
+                        <ul>
+                            <li>도쿄/나리타(NRT)</li>
+                            <li>오사카/감사이(KIX)</li>
+                            <li>후쿠오카(FUK)</li>
+                            <li>삿포로(CTS)</li>
+                            <li>	오키나와(OKA)</li>
+                            <li>기타쿠슈(KKJ)</li>
+                            <li>상아이/푸동(PVG)</li>
+                            <li>시안(XIY)</li>
+                            <li>홍콩(HKG)</li>
+                            <li>마카오(MFM)</li>
+                            <li>타이베이/타오위안(TPE)</li>
+                            <li>칭다오(TAO)</li>
+                        </ul>
+                    </li>
+                    <li class="main-li Southeast_Asia">
+                        <p>동남아 <strong>▼</strong></p>
+                        <ul>
+                            <li>방콕(BKK)</li>
+                            <li>푸껫(HKT)</li>
+                            <li>치앙마이(CNX)</li>
+                            <li>세부(CEB)</li>
+                            <li>클락(CRK)</li>
+                            <li>보라카이/칼리보(KLO)</li>
+                            <li>다낭(DAD)</li>
+                            <li>하노이(HAN)</li>
+                            <li>비엔티안(VTE)</li>
+                            <li>코타 키나발루(BKI)</li>
+                            <li>조호르바루(JHB)</li>
+                        </ul>
+                    </li>
+
+                    <li class="main-li Oceania">
+                        <p>대양주 <strong>▼</strong></p>
+                        <ul>
+                            <li>괌(GUM)</li>
+                        </ul>
+                    </li>
+                    <li class="main-li Americas">
+                        <p>미주 <strong>▼</strong></p>
+                        <ul>
+                            <li>하와이, 호놀룰루(HNL)</li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
             <!-- 도착지 -->
             <div class="arrival-box hide Place">
-                <table>
-                    <tr>
-                        <th>한국</th>
-                        <th>동북아</th>
-                        <th>동남아</th>
-                        <th>대양주</th>
-                        <th>미주</th>
-                    </tr>
-                    <tr>
-                        <td>서울/인천(ICN)</td>
-                        <td>도쿄/나리타(NRT)</td>
-                        <td>방콕(BKK)</td>
-                        <td>괌(GUM)</td>
-                        <td>하와이,호놀룰룰(HNL)</td>
-                    </tr>
-                    <tr>
-                        <td>서울/김포(GMP)</td>
-                        <td>오사카/감사이(KIX)</td>
-                        <td>푸꼣(HKT)</td>
-                    </tr>
-                    <tr>
-                        <td>부산(PUS)</td>
-                        <td>후쿠오카(FUK)</td>
-                        <td>치앙마이(CNX)</td>
-                    </tr>                    <tr>
-                        <td>제주(CJU)</td>
-                        <td>삿포로(CTS)</td>
-                        <td>세부(CEB)</td>
-                    </tr>
-                    <tr>
-                        <td>청주(CJJ)</td>
-                        <td>오키나와(OKA)</td>
-                        <td>클락(CRK)</td>
-                    </tr>
-                    <tr>
-                        <td>광주(KWJ)</td>
-                        <td>기타쿠슈(KKJ)</td>
-                        <td>보라카이/칼리보(KLO)</td>
-                    </tr>
-                    <tr>
-                        <td>대구(TAE)</td>
-                        <td>상아이/푸동(PVG)</td>
-                        <td>다낭(DAD)</td>
-                    </tr>
-                    <tr>
-                        <td>여수(RSU)</td>
-                        <td>시안(XIY)</td>
-                        <td>하노이(HAN)</td>
-                    </tr>
-                    <tr>
-                        <td>울산(USN)</td>
-                        <td>홍콩(HKG)</td>
-                        <td>비엔티안(VTE)</td>
-                    </tr>
-                    <tr>
-                        <td>포항(KPO)</td>
-                        <td>마카오(MFM)</td>
-                        <td>코타 키나발루(BKI)</td>
-                    </tr>
-                    <tr>
-                        <td>원주(WJU)</td>
-                        <td>타이베이/타오위안(TPE)</td>
-                        <td>조호르바루(JHB)</td>
-                    </tr>
-                    <tr>
-                        <td>군산(KUV)</td>
-                        <td>칭다오(TAO)</td>
-                    </tr>
-                    <tr>
-                        <td>사천(HIN)</td>
-                    </tr>
-                </table>
+                <ul class="main-ul">
+                    <li class="main-li Korean">
+                        <p>한국 <strong>▼</strong></p>
+                        <ul>
+                            <li>서울/인천(ICN)</li>
+                            <li>서울/김포(GMP)</li>
+                            <li>부산(PUS)</li>
+                            <li>제주(CJU)</li>
+                            <li>청주(CJJ)</li>
+                            <li>광주(KWJ)</li>
+                            <li>대구(TAE)</li>
+                            <li>여수(RSU)</li>
+                            <li>울산(USN)</li>
+                            <li>포항(KPO)</li>
+                            <li>원주(WJU)</li>
+                            <li>군산(KUV)</li>
+                            <li>사천(HIN)</li>
+                        </ul>
+                    </li>
+                    <li class="main-li Northeast_Asia">
+                        <p>동북아 <strong>▼</strong></p>
+                        <ul>
+                            <li>도쿄/나리타(NRT)</li>
+                            <li>오사카/감사이(KIX)</li>
+                            <li>후쿠오카(FUK)</li>
+                            <li>삿포로(CTS)</li>
+                            <li>	오키나와(OKA)</li>
+                            <li>기타쿠슈(KKJ)</li>
+                            <li>상아이/푸동(PVG)</li>
+                            <li>시안(XIY)</li>
+                            <li>홍콩(HKG)</li>
+                            <li>마카오(MFM)</li>
+                            <li>타이베이/타오위안(TPE)</li>
+                            <li>칭다오(TAO)</li>
+                        </ul>
+                    </li>
+                    <li class="main-li Southeast_Asia">
+                        <p>동남아 <strong>▼</strong></p>
+                        <ul>
+                            <li>방콕(BKK)</li>
+                            <li>푸껫(HKT)</li>
+                            <li>치앙마이(CNX)</li>
+                            <li>세부(CEB)</li>
+                            <li>클락(CRK)</li>
+                            <li>보라카이/칼리보(KLO)</li>
+                            <li>다낭(DAD)</li>
+                            <li>하노이(HAN)</li>
+                            <li>비엔티안(VTE)</li>
+                            <li>코타 키나발루(BKI)</li>
+                            <li>조호르바루(JHB)</li>
+                        </ul>
+                    </li>
+
+                    <li class="main-li Oceania">
+                        <p>대양주 <strong>▼</strong></p>
+                        <ul>
+                            <li>괌(GUM)</li>
+                        </ul>
+                    </li>
+                    <li class="main-li Americas">
+                        <p>미주 <strong>▼</strong></p>
+                        <ul>
+                            <li>하와이, 호놀룰루(HNL)</li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
             <!-- 가는날 -->
             <div class="daytogo-box hide letsfly">
@@ -390,7 +445,7 @@
             </div>
         </div>
         <div class="button-box">
-            <button class="food-button">기내식</button>
+            <button class="food-button click">기내식</button>
             <button class="souvenir-button">굿즈</button>
         </div>
     </div>
@@ -542,7 +597,6 @@
                     <option value=""><a href="#">日本(日本語) / JPY</a></option>
                     <option value=""><a href="#">USA(English) / USD</a></option>
                     <option value=""><a href="#">中国(中文简体) / CNY</a></option>
-
                 </select>
                 <a href="#"><strong>한국어</strong></a>
                 <a href="#">English</a>
