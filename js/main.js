@@ -1,3 +1,27 @@
+        // 새로고침 자바
+
+
+        var filter = "win16|win32|win64|mac|macintel"; 
+        if ( navigator.platform ) { 
+            if ( filter.indexOf( navigator.platform.toLowerCase() ) < 0 ) { 
+                //mobile 
+                
+            } else { 
+                //pc 
+                $(function(){
+                    $(window).resize(function (){
+        
+                    var width_size = window.outerWidth;
+        
+                    if (width_size=749.99) {
+                        document.location.reload();
+                    }
+                })
+                });
+            } 
+        }
+
+     
      // 이벤트
      function  Slide(){
         $('#event ul').stop().animate({'marginLeft':'-100%'},1000,function(){
@@ -218,7 +242,7 @@
             $('.depart h2:nth-of-type(2)').text("");
             $('.depart-box').slideUp();
             $('.depart').removeClass('click')
-            $('.depart-box .main-li li').slideUp();
+           
         });
     });
     $(function(){
@@ -227,31 +251,90 @@
             $('.arrival-box').slideUp();
             $('.arrival h2:nth-of-type(2)').text("");
             $('.arrival').removeClass('click')
-            $('.depart-box .main-li li').slideUp();
+      
         });
     });
 
-    
-    $(function(){
-        $('.hide .Korean p').click(function(){
-            $('.hide .Korean li').slideToggle();
-            $('.hide .main-li li').not('.Korean li').slideUp();
-        });
-        $('.hide .Northeast_Asia p').click(function(){
-            $('.hide .Northeast_Asia li').slideToggle();
-            $('.hide .main-li li').not('.Northeast_Asia li').slideUp();
-        });
-        $('.hide .Southeast_Asia p').click(function(){
-            $('.hide .Southeast_Asia li').slideToggle();
-            $('.hidex .main-li li').not('.Southeast_Asia li').slideUp();
-        });
-        $('.hide .Oceania p').click(function(){
-            $('.hide .Oceania li').slideToggle();
-            $('.hide .main-li li').not('.Oceania li').slideUp();
-        });
-        $('.hide .Americas p').click(function(){
-            $('.hide .Americas li').slideToggle();
-            $('.hide .main-li li').not('.Americas li').slideUp();
+
+    // 모바일 버전
+    if (matchMedia("screen and (max-width: 749.99px)").matches) {
+        // 모바일 예매
+        $(function () {
+            $('.hide .Korean p').click(function () {
+                $('.hide .Korean li').slideToggle();
+                $('.hide .main-li li').not('.Korean li').slideUp();
+            });
+            $('.hide .Northeast_Asia p').click(function () {
+                $('.hide .Northeast_Asia li').slideToggle();
+                $('.hide .main-li li').not('.Northeast_Asia li').slideUp();
+            });
+            $('.hide .Southeast_Asia p').click(function () {
+                $('.hide .Southeast_Asia li').slideToggle();
+                $('.hide .main-li li').not('.Southeast_Asia li').slideUp();
+            });
+            $('.hide .Oceania p').click(function () {
+                $('.hide .Oceania li').slideToggle();
+                $('.hide .main-li li').not('.Oceania li').slideUp();
+            });
+            $('.hide .Americas p').click(function () {
+                $('.hide .Americas li').slideToggle();
+                $('.hide .main-li li').not('.Americas li').slideUp();
+            });
+
         });
 
-    });
+
+
+        // 매뉴창 생김,없어짐
+        $(function(){
+            $('.mobile-nav span').click(function(){
+                $('.mobile-nav').animate({'marginLeft':'100%'},1000)
+                $("html, body").removeClass('not_scroll');
+            });
+            $('#mobile-menu img[alt="hamburger"]').click(function(){
+                $('.mobile-nav').animate({'marginLeft':'0'},1000)
+                $("html, body").addClass('not_scroll');
+            });
+        });
+
+
+        // 매뉴창 메인버튼 누르면 서브가 생기고 없어짐
+        $(function(){
+            $('.mobile-nav .reservation').click(function(){
+                $('.mobile-nav .reservation').toggleClass('click');
+                $('.mobile_butome').not('.reservation').removeClass('click')
+                $('.mobile-reservation').fadeIn(0);
+                $('.mobile-service').fadeOut(0);
+                $('.mobile-Benefits').fadeOut(0);
+                $('.mobile-point').fadeOut(0);
+            });
+            $('.mobile-nav .service').click(function(){
+                $('.mobile-nav .service').toggleClass('click');
+                $('.mobile_butome').not('.service').removeClass('click')
+                $('.mobile-service').fadeIn(0);
+                $('.mobile-reservation').fadeOut(0);
+                $('.mobile-Benefits').fadeOut(0);
+                $('.mobile-point').fadeOut(0);
+            });
+            $('.mobile-nav .Benefits').click(function(){
+                $('.mobile-nav .Benefits').toggleClass('click');
+                $('.mobile_butome').not('.Benefits').removeClass('click')
+                $('.mobile-Benefits').fadeIn(0);
+                $('.mobile-reservation').fadeOut(0);
+                $('.mobile-service').fadeOut(0);
+                $('.mobile-point').fadeOut(0);
+            });
+            $('.mobile-nav .point').click(function(){
+                $('.mobile-nav .point').toggleClass('click');
+                $('.mobile_butome').not('.point').removeClass('click')
+                $('.mobile-point').fadeIn(0);
+                $('.mobile-reservation').fadeOut(0);
+                $('.mobile-Benefits').fadeOut(0);
+                $('.mobile-service').fadeOut(0);
+            });
+        });
+
+    }
+
+
+ 
