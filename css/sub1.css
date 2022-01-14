@@ -1,0 +1,36 @@
+#aerial{width: 100%;height: 680px;background-color: antiquewhite; display: flex; flex-direction: row;
+flex-wrap: wrap; justify-content: space-between;}
+#aerial .aeria_text{width: 40%;height: 100%; background-color: aqua;}
+#aerial .aeria_photo{width: 60%;height: 105%;  background-color: blueviolet;}
+
+#airline_ticket{width: 1100px;height: auto;padding: 100px 0; background-color: burlywood;
+margin: 0 auto;}
+
+#suggestion{width: 100%; height: auto;background-color: cornsilk;margin-bottom: 100px;}
+.suggestion_ticket{width: 100%;height: 250px;margin: 30px 0;}
+ .suggestion_photo{width: 35%;height: 100%; background-color: cyan;float: left;}
+ .suggestion_text{width: 65%;height: 100%;background-color: darkblue;float: right;}
+
+
+/* 국내선 ////////////// */
+#domestic{width: 100%;height: auto;background-color: darkcyan;margin-bottom: 100px; display: flex;
+flex-direction: row;flex-wrap: wrap;justify-content: space-between;align-content: space-between;}
+    /* 제목 */
+ .domestic_title{width: 100%;}
+ .domestic_title h2{}
+    /* 국내선 박스 */
+.domestic_ticket{width: 30%; height: 300px; background-color: darkgray;}
+.domestic_photo{width: 100%;height: 200px;background-color: darkgoldenrod;}
+
+
+
+/* 국제선 //////////////// */
+#international{width: 100%;height: auto;background-color: darkcyan;margin-bottom: 100px; display: flex;
+    flex-direction: row;flex-wrap: wrap;justify-content:flex-start;align-content: space-between;}
+        /* 제목 */
+     .international_title{width: 100%;}
+     .international_title h2{}
+        /* 국제선 박스 */
+    .international_ticket{width: 30%; height: 300px; background-color:cornsilk;margin-right: 5%;}
+    .international_photo{width: 100%;height: 200px;background-color: aquamarine;}
+    
