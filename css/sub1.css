@@ -134,11 +134,11 @@
         .suggestion_ticket:nth-of-type(3) .suggestion_photo{background-image: url(../img/sub1/여행지/포항.jpg);}
         .suggestion_ticket:nth-of-type(4) .suggestion_photo{background-image: url(../img/sub1/여행지/제주도2.jpg);}
         .suggestion_ticket:nth-of-type(5) .suggestion_photo{background-image: url(../img/sub1/여행지/여수.jpg);}
-    .suggestion_photo{width: 35%;height: 100%;float: left;background-position: center;background-size: cover;
+    .suggestion_photo{width: 45%;height: 100%;float: left;background-position: center;background-size: cover;
     transition: 0.5s;}
         .suggestion_photo:hover{box-shadow: 4px 4px 20px 1px #999;}
      
-    .suggestion_text{width: 65%;height: 100%;float: right;
+    .suggestion_text{width: 55%;height: 100%;float: right;
     padding-left: 40px;font-size: 16px;padding-top: 8px;}
         .suggestion_text span{border: 1px solid #999;border-radius: 20px;padding:2px 5px;
         cursor: pointer; font-size: 13px;}
@@ -241,11 +241,11 @@ margin: 0 auto;}
     .suggestion_ticket:nth-of-type(3) .suggestion_photo{background-image: url(../img/sub1/여행지/포항.jpg);}
     .suggestion_ticket:nth-of-type(4) .suggestion_photo{background-image: url(../img/sub1/여행지/제주도2.jpg);}
     .suggestion_ticket:nth-of-type(5) .suggestion_photo{background-image: url(../img/sub1/여행지/여수.jpg);}
-.suggestion_photo{width: 35%;height: 100%;float: left;background-position: center;background-size: cover;
+.suggestion_photo{width: 45%;height: 100%;float: left;background-position: center;background-size: cover;
 transition: 0.5s;}
     .suggestion_photo:hover{box-shadow: 4px 4px 20px 1px #999;}
  
-.suggestion_text{width: 65%;height: 100%;float: right;
+.suggestion_text{width: 55%;height: 100%;float: right;
 padding-left: 40px;font-size: 18px;padding-top: 8px;}
     .suggestion_text span{border: 1px solid #999;border-radius: 20px;padding:2px 5px;
     cursor: pointer; font-size: 13px;}
