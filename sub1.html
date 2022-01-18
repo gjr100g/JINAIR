@@ -8,25 +8,27 @@
     <link rel="stylesheet" href="../JINAIR/css/reset.css">
     <link rel="stylesheet" href="../JINAIR/css/common.css">
     <link rel="stylesheet" href="../JINAIR/css/sub1.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
 </head>
 <body>
     <!-- 해더 /////////////////// -->
     <header>
-        <a href="#">
+        <a href="index.html">
             <img src="img/common/로고/로고2.png" alt="logo">
         </a>
         <nav>
             <div class="menu">
-                <a href="#">예약</a>
-                <a href="#">서비스</a>
-                <a href="#">혜택</a>
-                <a href="#">나비포인트</a>
-                <a href="#">지니스토리</a> 
+                <a href="sub1.html">예약</a>
+                <a href="sub1.html">서비스</a>
+                <a href="sub1.html">혜택</a>
+                <a href="sub1.html">나비포인트</a>
+                <a href="sub1.html">지니스토리</a> 
             </div>
 
             <div id="nav-right">
-                <a href="#"><img src="img/common/아이콘/독보기.png" alt=""> 검색</a>
-                <a href="#">로그인</a>
+                <a href="sub1.html"><img src="img/common/아이콘/독보기.png" alt=""> 검색</a>
+                <a href="sub1.html">로그인</a>
             </div>
         </nav>
         <div id="mobile-menu">
@@ -36,64 +38,144 @@
             </a>
 
         </div>
-        <div class="mobile-nav">
-            <div class="qq">
-                <select name="" id="">
-                    <option value=""><a href="#">한국(Korean) / KRW</a></option>
-                    <option value=""><a href="#">日本(日本語) / JPY</a></option>
-                    <option value=""><a href="#">USA(English) / USD</a></option>
-                    <option value=""><a href="#">中国(中文简体) / CNY</a></option>
-                </select>
-                <span>x</span>
+        <div class="mobile-nav cont">
+            <div class="mobile_login">
+                <div class="x">
+                    <select name="" id="">
+                        <option value=""><a href="#">한국(Korean) / KRW</a></option>
+                        <option value=""><a href="#">日本(日本語) / JPY</a></option>
+                        <option value=""><a href="#">USA(English) / USD</a></option>
+                        <option value=""><a href="#">中国(中文简体) / CNY</a></option>
+                    </select>
+                    <span>x</span>
+                </div>
+
                 <div class="login">
                     <button>회원가입</button>
                     <button>로그인</button>
                 </div>
             </div>
-
-            <div class="main">
-                <h2 class="ww">예약</h2>
-                <h2>서비스</h2>
-                <h2>혜택</h2>
-                <h2>나비포인트</h2>
-                <h2>지니스토어</h2>
-            </div>
-            <div class="sub">
-                <div class="reservation">
-                    <ul>
-                        <li><a href="#" class="stron">항공원 예약</a></li>
-                        <li><a href="#">예약</a></li>
-                        <li><a href="#">최저가 항공권</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="#" class="stron">나의 예약</a></li>
-                        <li><a href="#">예약 조회/변경/취소</a></li>
-                        <li><a href="#">부가서비스 신청/취소</a></li>
-                        <li><a href="#">웹/모바일 체크인</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="#" class="stron">운항 정보</a></li>
-                        <li><a href="#">스케줄 조회</a></li>
-                        <li><a href="#">출도착 안내</a></li>
-                        <li><a href="#">취항 노선 안내</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="#" class="stron">예약 및 운임 안내</a></li>
-                        <li><a href="#">예매 서비스</a></li>
-                        <li><a href="#">국내선 운임</a></li>
-                        <li><a href="#">국제선 운임</a></li>
-                        <li><a href="#">비즈니스 운임</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="#" class="stron">할인안내</a></li>
-                        <li><a href="#">가족운임 할인제도</a></li>
-                        <li><a href="#">상용우대 프로그램</a></li>
-                        <li><a href="#">제주도민 할인제도</a></li>
-                        <li><a href="#">재외/명예도민 할인제도</a></li>
-                        <li><a href="#">군산시민 할인제도</a></li>
-                    </ul>
+            
+            <div class="mainsub">
+                <div class="main">
+                    <h2 class="reservation mobile_butome click">예약</h2>
+                    <h2 class="service mobile_butome">서비스</h2>
+                    <h2 class="Benefits mobile_butome">혜택</h2>
+                    <h2 class="point mobile_butome">나비포인트</h2>
+                    <a href="#">
+                        <h2>지니스토어</h2>
+                    </a>
+                    
+                </div>
+                <div class="sub">
+                    <div class="mobile-reservation">
+                        <ul>
+                            <li><a href="sub1.html" class="stron">항공원 예약</a></li>
+                            <li><a href="sub1.html">예약</a></li>
+                            <li><a href="sub1.html">최저가 항공권</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="sub1.html" class="stron">나의 예약</a></li>
+                            <li><a href="sub1.html">예약 조회/변경/취소</a></li>
+                            <li><a href="sub1.html">부가서비스 신청/취소</a></li>
+                            <li><a href="sub1.html">웹/모바일 체크인</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="sub1.html" class="stron">운항 정보</a></li>
+                            <li><a href="sub1.html">스케줄 조회</a></li>
+                            <li><a href="sub1.html">출도착 안내</a></li>
+                            <li><a href="sub1.html">취항 노선 안내</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="sub1.html" class="stron">예약 및 운임 안내</a></li>
+                            <li><a href="sub1.html">예매 서비스</a></li>
+                            <li><a href="sub1.html">국내선 운임</a></li>
+                            <li><a href="sub1.html">국제선 운임</a></li>
+                            <li><a href="sub1.html">비즈니스 운임</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="sub1.html" class="stron">할인안내</a></li>
+                            <li><a href="sub1.html">가족운임 할인제도</a></li>
+                            <li><a href="sub1.html">상용우대 프로그램</a></li>
+                            <li><a href="sub1.html">제주도민 할인제도</a></li>
+                            <li><a href="sub1.html">재외/명예도민 할인제도</a></li>
+                            <li><a href="sub1.html">군산시민 할인제도</a></li>
+                        </ul>
+                    </div>
+                    <div class="mobile-service">
+                        <ul>
+                            <li><a href="#">공항 서비스</a></li>
+                            <li><a href="#">공항카운터 안내</a></li>
+                            <li><a href="#">수하물</a></li>
+                            <li><a href="#">도움이 필요하신 고객</a></li>
+                            <li><a href="#">체크인 안내</a></li>
+                            <li><a href="#">입국신고서 작성 안내</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">기내 서비스</a></li>
+                            <li><a href="#">기내 여행 가이드</a></li>
+                            <li><a href="#">기내유상판매</a></li>
+                            <li><a href="#">기내 면세품</a></li>
+                            <li><a href="#">기내 매거진</a></li>
+                            <li><a href="#">이벤트 플라잇</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">부가 서비스</a></li>
+                            <li><a href="#">번들 서비스</a></li>
+                            <li><a href="#">사전좌석지정</a></li>
+                            <li><a href="#">기내식</a></li>
+                            <li><a href="#">기내 엔터테인먼트</a></li>
+                        </ul>
+                    </div>
+                    <div class="mobile-Benefits">
+                        <ul>
+                            <li><a href="#">프로모션</a></li>
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">지니쿠폰</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">카드 및 환전 혜택</a></li>
+                            <li><a href="#">제휴 카드</a></li>
+                            <li><a href="#">환율 우대</a></li>
+                            <li><a href="#">무이자 할부</a></li>
+                            <li><a href="#">모바일 환전지갑 서비스</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">보딩패스 할인</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">액티비티</a></li>
+                            <li><a href="#">클룩</a></li>
+                            <li><a href="#">돈키호테</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">호텔</a></li>
+                            <li><a href="#">부킹닷컴</a></li>
+                            <li><a href="#">호텔스컴바인</a></li>
+                            <li><a href="#">트립닷컴</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">차량 서비스</a></li>
+                            <li><a href="#">SK렌터카</a></li>
+                            <li><a href="#">렌탈카스</a></li>
+                            <li><a href="#">허츠렌터카</a></li>
+                            <li><a href="#">공항 밴</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">여행 안심 서비스</a></li>
+                            <li><a href="#">Chubb 해외 여행보험</a></li>
+                            <li><a href="#">Assistcard 여행토탈케어</a></li>
+                        </ul>
+    
+                    </div>
+                    <div class="mobile-point">
+                        <ul><li>나의 나비포인트</li></ul>
+                        <ul><li>적립안내</li></ul>
+                        <ul><li>사용안내</li></ul>
+                    </div>
                 </div>
             </div>
+            
         </div>
 
     </header>
@@ -101,11 +183,17 @@
     <!-- 항공 사진///////////////// -->
     <div id="aerial">
         <div class="aeria_text">
-
+            <div class="aeria_text_box">
+                <p>최저가!</p>
+                <h2>지금 이순간<strong>.</strong></h2>
+                <p>진에어에서 제공하는 최저가를 한 눈에!</p>
+            </div>
         </div>
         <div class="aeria_photo">
 
         </div>
+        <div class="aeria_photo2"></div>
+        <div class="aeria_photo3"></div>
     </div>
     <!-- 항공권////////////// -->
     <div id="airline_ticket">
@@ -113,68 +201,83 @@
             <h2>추천하는 항공권</h2>
 
             <div class="suggestion_ticket">
-                <div class="suggestion_photo"></div>
+                <a href="#">
+                    <div class="suggestion_photo"></div>
+                </a> 
                 <div class="suggestion_text">
                     <div class="suggestion_button">
                         <span>편도</span>
                         <span>최저가</span>
                     </div>
-                    <h3>서울/김포 → 제주</h3>
+                    <a href="#"><h3>서울/김포 → 제주</h3></a>
                     <p>편도 총액</p>
-                    <p>KRW19,500 ~</p>
-                    <p>22.01.14 (금) - 22.02.04 (금) 출발</p>
+                    <p>KRW 21,500 ~</p>
+                    <p>22.01.18 (화) - 22.02.08 (화) 출발</p>
+                    <a href="#">자세히 보기 -</a>
                 </div>
             </div>
             <div class="suggestion_ticket">
-                <div class="suggestion_photo"></div>
+                <a href="#">
+                    <div class="suggestion_photo"></div>
+                </a> 
                 <div class="suggestion_text">
                     <div class="suggestion_button">
                         <span>편도</span>
                         <span>최저가</span>
                     </div>
-                    <h3>서울/김포 → 제주</h3>
+                    <a href="#"><h3>서울/김포 → 부산</h3></a>
                     <p>편도 총액</p>
-                    <p>KRW19,500 ~</p>
-                    <p>22.01.14 (금) - 22.02.04 (금) 출발</p>
+                    <p>KRW 16,200 ~</p>
+                    <p>22.01.18 (화) - 22.02.08 (화) 출발</p>
+                    <a href="#">자세히 보기 -</a>
                 </div>
             </div>
             <div class="suggestion_ticket">
-                <div class="suggestion_photo"></div>
+                <a href="#">
+                    <div class="suggestion_photo"></div>
+                </a> 
                 <div class="suggestion_text">
                     <div class="suggestion_button">
                         <span>편도</span>
                         <span>최저가</span>
                     </div>
-                    <h3>서울/김포 → 제주</h3>
+                    <a href="#"><h3>서울/김포 → 포항</h3></a>
                     <p>편도 총액</p>
-                    <p>KRW19,500 ~</p>
-                    <p>22.01.14 (금) - 22.02.04 (금) 출발</p>
+                    <p>KRW 41,500 ~</p>
+                    <p>22.01.18 (화) - 22.02.04 (화) 출발</p>
+                    <a href="#">자세히 보기 -</a>
                 </div>
             </div>
             <div class="suggestion_ticket">
-                <div class="suggestion_photo"></div>
+                <a href="#">
+                    <div class="suggestion_photo"></div>
+                </a> 
                 <div class="suggestion_text">
                     <div class="suggestion_button">
                         <span>편도</span>
                         <span>최저가</span>
                     </div>
-                    <h3>서울/김포 → 제주</h3>
+                    <a href="#"><h3>서울/김포 → 제주</h3></a>
                     <p>편도 총액</p>
-                    <p>KRW19,500 ~</p>
-                    <p>22.01.14 (금) - 22.02.04 (금) 출발</p>
+                    <p>KRW 41,500 ~</p>
+                    <p>22.01.18 (화) - 22.03.26 (토) 출발</p>
+                    <a href="#">자세히 보기 -</a>
                 </div>
             </div>
             <div class="suggestion_ticket">
-                <div class="suggestion_photo"></div>
+                <a href="#">
+                    <div class="suggestion_photo"></div>
+                </a> 
                 <div class="suggestion_text">
                     <div class="suggestion_button">
                         <span>편도</span>
                         <span>최저가</span>
                     </div>
-                    <h3>서울/김포 → 제주</h3>
+                    <a href="#"><h3>서울/김포 → 여수</h3></a>
                     <p>편도 총액</p>
-                    <p>KRW19,500 ~</p>
-                    <p>22.01.14 (금) - 22.02.04 (금) 출발</p>
+                    <p>KRW 25,500 ~</p>
+                    <p>22.01.18 (금) - 22.02.08 (금) 출발</p>
+                    <a href="#">자세히 보기 -</a>
                 </div>
             </div>
         </div>
@@ -186,163 +289,161 @@
             <div class="domestic_title">
                 <h2>국내 항공권</h2>
             </div>
+            <a href="#">
+                <div class="domestic_ticket">
+                    <div class="domestic_photo"></div>
+                    <div class="domestic_text">
+    
+                        <h3>서울/김포 → 제주</h3>
+                        <p>편도 총액</p>
+                        <p>KRW 21,500 ~</p>
+                        <p>22.01.18 (화) - 22.02.08 (화) 출발</p>
+                    </div>
+                </div>
+            </a>
 
-            <div class="domestic_ticket">
-                <div class="domestic_photo"></div>
-                <div class="domestic_text">
-                    <div class="domestic_button">
-                        <span>편도</span>
-                        <span>최저가</span>
+            <a href="#">
+                <div class="domestic_ticket">
+                    <div class="domestic_photo"></div>
+                    <div class="domestic_text">
+    
+                        <h3>청주 → 제주</h3>
+                        <p>편도 총액</p>
+                        <p>KRW 20,500 ~</p>
+                        <p>22.01.18 (화) - 22.02.08 (화) 출발</p>
                     </div>
-                    <h3>서울/김포 → 제주</h3>
-                    <p>편도 총액</p>
-                    <p>KRW19,500 ~</p>
-                    <p>22.01.14 (금) - 22.02.04 (금) 출발</p>
                 </div>
-            </div>
-            <div class="domestic_ticket">
-                <div class="domestic_photo"></div>
-                <div class="domestic_text">
-                    <div class="domestic_button">
-                        <span>편도</span>
-                        <span>최저가</span>
+            </a>
+            
+            <a href="#">
+                <div class="domestic_ticket">
+                    <div class="domestic_photo"></div>
+                    <div class="domestic_text">
+    
+                        <h3>부산 → 제주</h3>
+                        <p>편도 총액</p>
+                        <p>KRW 20,200 ~</p>
+                        <p>22.01.18 (화) - 22.02.08 (화) 출발</p>
                     </div>
-                    <h3>서울/김포 → 제주</h3>
-                    <p>편도 총액</p>
-                    <p>KRW19,500 ~</p>
-                    <p>22.01.14 (금) - 22.02.04 (금) 출발</p>
                 </div>
-            </div>
-            <div class="domestic_ticket">
-                <div class="domestic_photo"></div>
-                <div class="domestic_text">
-                    <div class="domestic_button">
-                        <span>편도</span>
-                        <span>최저가</span>
+            </a>
+
+            <a href="#">
+                <div class="domestic_ticket">
+                    <div class="domestic_photo"></div>
+                    <div class="domestic_text">
+    
+                        <h3>광주 → 제주</h3>
+                        <p>편도 총액</p>
+                        <p>KRW 17,500 ~</p>
+                        <p>22.01.18 (화) - 22.02.08 (화) 출발</p>
                     </div>
-                    <h3>서울/김포 → 제주</h3>
-                    <p>편도 총액</p>
-                    <p>KRW19,500 ~</p>
-                    <p>22.01.14 (금) - 22.02.04 (금) 출발</p>
                 </div>
-            </div>
-            <div class="domestic_ticket">
-                <div class="domestic_photo"></div>
-                <div class="domestic_text">
-                    <div class="domestic_button">
-                        <span>편도</span>
-                        <span>최저가</span>
+            </a>
+
+            <a href="#">
+                <div class="domestic_ticket">
+                    <div class="domestic_photo"></div>
+                    <div class="domestic_text">
+    
+                        <h3>서울/김포 → 포항</h3>
+                        <p>편도 총액</p>
+                        <p>KRW 41,500 ~</p>
+                        <p>22.01.18 (화) - 22.02.08 (화) 출발</p>
                     </div>
-                    <h3>서울/김포 → 제주</h3>
-                    <p>편도 총액</p>
-                    <p>KRW19,500 ~</p>
-                    <p>22.01.14 (금) - 22.02.04 (금) 출발</p>
                 </div>
-            </div>
-            <div class="domestic_ticket">
-                <div class="domestic_photo"></div>
-                <div class="domestic_text">
-                    <div class="domestic_button">
-                        <span>편도</span>
-                        <span>최저가</span>
+            </a>
+
+            <a href="#">
+                <div class="domestic_ticket">
+                    <div class="domestic_photo"></div>
+                    <div class="domestic_text">
+    
+                        <h3>포항 → 제주</h3>
+                        <p>편도 총액</p>
+                        <p>KRW 40,500 ~</p>
+                        <p>22.01.18 (화) - 22.02.08 (화) 출발</p>
                     </div>
-                    <h3>서울/김포 → 제주</h3>
-                    <p>편도 총액</p>
-                    <p>KRW19,500 ~</p>
-                    <p>22.01.14 (금) - 22.02.04 (금) 출발</p>
                 </div>
-            </div>
-            <div class="domestic_ticket">
-                <div class="domestic_photo"></div>
-                <div class="domestic_text">
-                    <div class="domestic_button">
-                        <span>편도</span>
-                        <span>최저가</span>
+            </a>
+
+            <a href="#">
+                <div class="domestic_ticket">
+                    <div class="domestic_photo"></div>
+                    <div class="domestic_text">
+    
+                        <h3>원주 → 제주</h3>
+                        <p>편도 총액</p>
+                        <p>KRW 41,500 ~</p>
+                        <p>22.01.18 (화) - 22.02.08 (화) 출발</p>
                     </div>
-                    <h3>서울/김포 → 제주</h3>
-                    <p>편도 총액</p>
-                    <p>KRW19,500 ~</p>
-                    <p>22.01.14 (금) - 22.02.04 (금) 출발</p>
                 </div>
-            </div>
-            <div class="domestic_ticket">
-                <div class="domestic_photo"></div>
-                <div class="domestic_text">
-                    <div class="domestic_button">
-                        <span>편도</span>
-                        <span>최저가</span>
+            </a>
+
+            <a href="#">
+                <div class="domestic_ticket">
+                    <div class="domestic_photo"></div>
+                    <div class="domestic_text">
+    
+                        <h3>군산 → 제주</h3>
+                        <p>편도 총액</p>
+                        <p>KRW 36,500 ~</p>
+                        <p>22.01.18 (화) - 22.02.08 (화) 출발</p>
                     </div>
-                    <h3>서울/김포 → 제주</h3>
-                    <p>편도 총액</p>
-                    <p>KRW19,500 ~</p>
-                    <p>22.01.14 (금) - 22.02.04 (금) 출발</p>
                 </div>
-            </div>
-            <div class="domestic_ticket">
-                <div class="domestic_photo"></div>
-                <div class="domestic_text">
-                    <div class="domestic_button">
-                        <span>편도</span>
-                        <span>최저가</span>
+            </a>
+
+            <a href="#">
+                <div class="domestic_ticket">
+                    <div class="domestic_photo"></div>
+                    <div class="domestic_text">
+    
+                        <h3>서울/김포 → 여수</h3>
+                        <p>편도 총액</p>
+                        <p>KRW 25,500 ~</p>
+                        <p>22.01.18 (화) - 22.02.08 (화) 출발</p>
                     </div>
-                    <h3>서울/김포 → 제주</h3>
-                    <p>편도 총액</p>
-                    <p>KRW19,500 ~</p>
-                    <p>22.01.14 (금) - 22.02.04 (금) 출발</p>
                 </div>
-            </div>
-            <div class="domestic_ticket">
-                <div class="domestic_photo"></div>
-                <div class="domestic_text">
-                    <div class="domestic_button">
-                        <span>편도</span>
-                        <span>최저가</span>
+            </a>
+
+            <a href="#">
+                <div class="domestic_ticket">
+                    <div class="domestic_photo"></div>
+                    <div class="domestic_text">
+    
+                        <h3>서울/김포 → 광주</h3>
+                        <p>편도 총액</p>
+                        <p>KRW 22,500 ~</p>
+                        <p>22.01.18 (화) - 22.02.08 (화) 출발</p>
                     </div>
-                    <h3>서울/김포 → 제주</h3>
-                    <p>편도 총액</p>
-                    <p>KRW19,500 ~</p>
-                    <p>22.01.14 (금) - 22.02.04 (금) 출발</p>
                 </div>
-            </div>
-            <div class="domestic_ticket">
-                <div class="domestic_photo"></div>
-                <div class="domestic_text">
-                    <div class="domestic_button">
-                        <span>편도</span>
-                        <span>최저가</span>
+            </a>
+
+            <a href="#">
+                <div class="domestic_ticket">
+                    <div class="domestic_photo"></div>
+                    <div class="domestic_text">
+    
+                        <h3>서울/김포 → 부산</h3>
+                        <p>편도 총액</p>
+                        <p>KRW 16,200 ~</p>
+                        <p>22.01.18 (화) - 22.02.08 (화) 출발</p>
                     </div>
-                    <h3>서울/김포 → 제주</h3>
-                    <p>편도 총액</p>
-                    <p>KRW19,500 ~</p>
-                    <p>22.01.14 (금) - 22.02.04 (금) 출발</p>
                 </div>
-            </div>
-            <div class="domestic_ticket">
-                <div class="domestic_photo"></div>
-                <div class="domestic_text">
-                    <div class="domestic_button">
-                        <span>편도</span>
-                        <span>최저가</span>
+            </a>
+
+            <a href="#">
+                <div class="domestic_ticket">
+                    <div class="domestic_photo"></div>
+                    <div class="domestic_text">
+    
+                        <h3>서울/김포 → 울산</h3>
+                        <p>편도 총액</p>
+                        <p>KRW 35,500 ~</p>
+                        <p>22.01.18 (화) - 22.02.08 (화) 출발</p>
                     </div>
-                    <h3>서울/김포 → 제주</h3>
-                    <p>편도 총액</p>
-                    <p>KRW19,500 ~</p>
-                    <p>22.01.14 (금) - 22.02.04 (금) 출발</p>
                 </div>
-            </div>
-            <div class="domestic_ticket">
-                <div class="domestic_photo"></div>
-                <div class="domestic_text">
-                    <div class="domestic_button">
-                        <span>편도</span>
-                        <span>최저가</span>
-                    </div>
-                    <h3>서울/김포 → 제주</h3>
-                    <p>편도 총액</p>
-                    <p>KRW19,500 ~</p>
-                    <p>22.01.14 (금) - 22.02.04 (금) 출발</p>
-                </div>
-            </div>
+            </a>
         </div>
 
 
@@ -352,37 +453,37 @@
             <div class="international_title">
                 <h2>국내 항공권</h2>
             </div>
-            <div class="international_ticket">
-                <div class="international_photo"></div>
-                <div class="international_text">
-                    <div class="international_button">
-                        <span>편도</span>
-                        <span>최저가</span>
+            <a href="#">
+                <div class="international_ticket">
+                    <div class="international_photo"></div>
+                    <div class="international_text">
+    
+                        <h3>서울/인천 → 괌</h3>
+                        <p>편도 총액</p>
+                        <p>KRW 256,200 ~</p>
+                        <p>22.01.18 (화) - 22.03.26 (토) 출발</p>
                     </div>
-                    <h3>서울/김포 → 제주</h3>
-                    <p>편도 총액</p>
-                    <p>KRW19,500 ~</p>
-                    <p>22.01.14 (금) - 22.02.04 (금) 출발</p>
                 </div>
-            </div>
-            <div class="international_ticket">
-                <div class="international_photo"></div>
-                <div class="international_text">
-                    <div class="international_button">
-                        <span>편도</span>
-                        <span>최저가</span>
+            </a>
+
+            <a href="#">
+                <div class="international_ticket">
+                    <div class="international_photo"></div>
+                    <div class="international_text">
+    
+                        <h3>서울/인천 → 후쿠오카</h3>
+                        <p>편도 총액</p>
+                        <p>KRW 237,600 ~</p>
+                        <p>22.01.18 (화) - 22.03.26 (토) 출발</p>
                     </div>
-                    <h3>서울/김포 → 제주</h3>
-                    <p>편도 총액</p>
-                    <p>KRW19,500 ~</p>
-                    <p>22.01.14 (금) - 22.02.04 (금) 출발</p>
                 </div>
-            </div>
+            </a>
             
         </div>
-
-
     </div>
+    
+    <!-- 바닥 백그라운드 -->
+    <div id="buttom"></div>
 
 
 

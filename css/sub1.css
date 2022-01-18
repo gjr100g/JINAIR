@@ -1,36 +1,309 @@
-#aerial{width: 100%;height: 680px;background-color: antiquewhite; display: flex; flex-direction: row;
-flex-wrap: wrap; justify-content: space-between;}
-#aerial .aeria_text{width: 40%;height: 100%; background-color: aqua;}
-#aerial .aeria_photo{width: 60%;height: 105%;  background-color: blueviolet;}
+@media(max-width:749.99px){
+    h2{font-size: 30px;margin-bottom: 20px;}
+    /* 항공사진 ///////////////////////// */
+    #aerial{width: 100%;height:250px;background-color: #f9ffd6; display: flex; flex-direction: row;
+    flex-wrap: wrap; justify-content: space-between;position: relative;}
+    #aerial .aeria_text{width: 100%;height: 100%;}
+    #aerial .aeria_photo{display: none;}
+    #aerial .aeria_photo2{display: none;}
+    #aerial .aeria_photo3{display: none;}
+    /* 항공사진 텍스트 */
+    #aerial .aeria_text_box{width: 100%;height: 100%;font-size: 15px;text-align: center;padding-top: 75px;}
+    #aerial .aeria_text_box h2{font-size: 40px;margin-bottom: 10px;}
+    #aerial .aeria_text_box h2 strong{color: #afc42a;font-size: 70px;}
+    #aerial .aeria_text_box p:nth-of-type(1){font-size: 20px;display: none;}
+    #aerial .aeria_text_box p:nth-of-type(2){color: #555;font-size: 20px;}
+    
+    /* 추천 항공  ////////////////////// */
+    #airline_ticket{width: 80%;height: auto;padding: 40px 0 0 0; 
+    margin: 0 auto;}
+    
+    #suggestion{width: 100%; height: auto;margin-bottom: 100px;}
+    .suggestion_ticket{width: 100%;height: 180px;margin: 50px 0;}
+    .suggestion_ticket:nth-of-type(1){margin-top: 0;}
+        .suggestion_ticket:nth-of-type(1) .suggestion_photo{background-image: url(../img/sub1/여행지/제주도.jpg);}
+        .suggestion_ticket:nth-of-type(2) .suggestion_photo{background-image: url(../img/sub1/여행지/부산.jpg);}
+        .suggestion_ticket:nth-of-type(3) .suggestion_photo{background-image: url(../img/sub1/여행지/포항.jpg);}
+        .suggestion_ticket:nth-of-type(4) .suggestion_photo{background-image: url(../img/sub1/여행지/제주도2.jpg);}
+        .suggestion_ticket:nth-of-type(5) .suggestion_photo{background-image: url(../img/sub1/여행지/여수.jpg);}
+    .suggestion_photo{width: 50%;height: 100%;float: left;background-position: center;background-size: cover;
+    transition: 0.5s;}
+        .suggestion_photo:hover{box-shadow: 4px 4px 20px 1px #999;}
+     
+    .suggestion_text{width:50%;height: 100%;float: right;
+    padding-left: 10px;font-size: 5px;padding-top: 8px;}
+        .suggestion_text span{border: 1px solid #999;border-radius: 20px;padding:2px 5px;
+        cursor: pointer; font-size: 1px;display: inline-block;}
+        .suggestion_text h3{font-size: 20px;}
+        .suggestion_text p{font-size: 13px;}
+        .suggestion_text p:nth-of-type(2){font-size: 17px;font-weight: bold;margin: 3px 0;}
+        .suggestion_text a{margin: 15px 0;display: inline-block; color: #afc42a;}
+        .suggestion_text a:hover{color: #333;}
+    
+    /* 국내선 ////////////// */
+    #domestic{width: 100%;height: auto;;margin-bottom: 100px; display: flex;
+    flex-direction: row;flex-wrap: wrap;justify-content: space-between;align-content: space-between;}
+        /* 제목 */
+     .domestic_title{width: 100%;}
+     .domestic_title h2{}
+        /* 국내선 박스 */
+    #domestic a{width: 48%;height: auto;display: inline-block;margin-bottom: 30px;}
+    #domestic a:hover .domestic_photo{box-shadow: 4px 4px 20px 0 #999;}
+        #domestic a:nth-of-type(1) .domestic_photo{background-image: url(../img/sub1/여행지/제주도.jpg);}
+        #domestic a:nth-of-type(2) .domestic_photo{background-image: url(../img/sub1/여행지/제주도.jpg);}
+        #domestic a:nth-of-type(3) .domestic_photo{background-image: url(../img/sub1/여행지/제주도.jpg);}
+        #domestic a:nth-of-type(4) .domestic_photo{background-image: url(../img/sub1/여행지/제주도.jpg);}
+        #domestic a:nth-of-type(5) .domestic_photo{background-image: url(../img/sub1/여행지/포항.jpg);}
+        #domestic a:nth-of-type(6) .domestic_photo{background-image: url(../img/sub1/여행지/제주도2.jpg);}
+        #domestic a:nth-of-type(7) .domestic_photo{background-image: url(../img/sub1/여행지/제주도2.jpg);}
+        #domestic a:nth-of-type(8) .domestic_photo{background-image: url(../img/sub1/여행지/제주도2.jpg);}
+        #domestic a:nth-of-type(9) .domestic_photo{background-image: url(../img/sub1/여행지/여수.jpg);}
+        #domestic a:nth-of-type(10) .domestic_photo{background-image: url(../img/sub1/여행지/광주.jpg);}
+        #domestic a:nth-of-type(11) .domestic_photo{background-image: url(../img/sub1/여행지/부산.jpg);}
+        #domestic a:nth-of-type(12) .domestic_photo{background-image: url(../img/sub1/여행지/여수.jpg);}
+    .domestic_ticket{width: 100%; height: 100%;}
+    .domestic_photo{width: 100%;height: 24vw;background-position: center;background-size: cover;
+    transition: 0.4s;}
+    .domestic_text{font-size: 14px;height: auto;}
+    .domestic_text p:nth-of-type(2){color: #afc42a;}
+    .domestic_text p:nth-of-type(3){font-size: 13px;}
+    .domestic_text h3{font-size: 16px;margin: 5px 0;}
+    
+    
+    /* 국제선 //////////////// */
+    #international{width: 100%;height: 150px; display: flex;
+        flex-direction: row;flex-wrap: wrap;justify-content:space-between;align-content: space-between;}
+            /* 제목 */
+         .international_title{width: 100%;}
+            /* 국제선 박스 */
+        #international a{width: 48%;height: auto;display: inline-block;margin-bottom: 30px;}
+        #international a:hover .international_photo{box-shadow: 4px 4px 20px 0 #999;}
+            #international a:nth-of-type(1) .international_photo{background-image: url(../img/sub1/여행지/괌.jpg);}
+            #international a:nth-of-type(2) .international_photo{background-image: url(../img/sub1/여행지/후쿠오카.jpg);}
+    
+        .international_ticket{width: 100%; height: 100%;}
+        .international_photo{width: 100%;height: 24vw;background-position: center;background-size: cover;
+        transition: 0.4s;}
+        .international_text{font-size: 14px;height: auto;}
+        .international_text p:nth-of-type(2){color: #afc42a;}
+        .international_text p:nth-of-type(3){font-size: 13px;}
+        .international_text h3{font-size: 16px;margin: 5px 0;}
+    
+    #buttom{width: 100%;height: 200px;background-image: url(../img/sub1/배경.jpg);background-size: cover;
+    background-position: center;}
+}
 
-#airline_ticket{width: 1100px;height: auto;padding: 100px 0; background-color: burlywood;
+
+
+
+
+
+
+
+
+@media(min-width:750px) and (max-width:1199.99px) {
+    h2{font-size: 30px;margin-bottom: 20px;}
+    /* 항공사진 ///////////////////////// */
+    #aerial{width: 100%;height: 400px;background-color: #f9ffd6; display: flex; flex-direction: row;
+    flex-wrap: wrap; justify-content: space-between;position: relative;}
+    #aerial .aeria_text{width: 45%;height: 100%;}
+    #aerial .aeria_photo{width: 55%;height: 105%; background-image: url(../img/sub1/메인\ 배경.jpg);
+    background-position: center;background-size: cover;box-shadow: 0 0 50px 1px #777;}
+    #aerial .aeria_photo2{position: absolute; bottom: -50px;left: 50%; background-image: url(../img/sub1/여행지/괌.jpg);
+    width: 200px;height: 140px;margin: 10px;background-position: center;background-size: cover;
+    box-shadow: 0 0 40px 1px #777;}
+    #aerial .aeria_photo3{position: absolute; bottom: -50px;right: 50%; background-image: url(../img/sub1/여행지/후쿠오카.jpg);
+    width: 200px;height: 140px;margin: 10px;background-position: center;background-size: cover;
+    box-shadow: 0 0 40px 1px #777;}
+    /* 항공사진 텍스트 */
+    #aerial .aeria_text_box{float: right;width: 300px;margin-top: 120px;font-size: 15px;}
+    #aerial .aeria_text_box h2{font-size: 40px;margin-bottom: 10px;}
+    #aerial .aeria_text_box h2 strong{color: #afc42a;font-size: 55px;}
+    #aerial .aeria_text_box p:nth-of-type(1){font-size: 20px;}
+    #aerial .aeria_text_box p:nth-of-type(2){color: #555;}
+    
+    /* 추천 항공  ////////////////////// */
+    #airline_ticket{width: 80%;height: auto;padding: 100px 0 0 0; 
+    margin: 0 auto;}
+    
+    #suggestion{width: 100%; height: auto;margin-bottom: 100px;}
+    .suggestion_ticket{width: 100%;height: 250px;margin: 50px 0;}
+    .suggestion_ticket:nth-of-type(1){margin-top: 0;}
+        .suggestion_ticket:nth-of-type(1) .suggestion_photo{background-image: url(../img/sub1/여행지/제주도.jpg);}
+        .suggestion_ticket:nth-of-type(2) .suggestion_photo{background-image: url(../img/sub1/여행지/부산.jpg);}
+        .suggestion_ticket:nth-of-type(3) .suggestion_photo{background-image: url(../img/sub1/여행지/포항.jpg);}
+        .suggestion_ticket:nth-of-type(4) .suggestion_photo{background-image: url(../img/sub1/여행지/제주도2.jpg);}
+        .suggestion_ticket:nth-of-type(5) .suggestion_photo{background-image: url(../img/sub1/여행지/여수.jpg);}
+    .suggestion_photo{width: 35%;height: 100%;float: left;background-position: center;background-size: cover;
+    transition: 0.5s;}
+        .suggestion_photo:hover{box-shadow: 4px 4px 20px 1px #999;}
+     
+    .suggestion_text{width: 65%;height: 100%;float: right;
+    padding-left: 40px;font-size: 16px;padding-top: 8px;}
+        .suggestion_text span{border: 1px solid #999;border-radius: 20px;padding:2px 5px;
+        cursor: pointer; font-size: 13px;}
+        .suggestion_text h3{font-size: 30px;}
+        .suggestion_text p{font-size: 18px;}
+        .suggestion_text p:nth-of-type(2){font-size: 23px;font-weight: bold;margin: 3px 0;}
+        .suggestion_text a{margin: 15px 0;display: inline-block; color: #afc42a;}
+        .suggestion_text a:hover{color: #333;}
+    
+    /* 국내선 ////////////// */
+    #domestic{width: 100%;height: auto;;margin-bottom: 100px; display: flex;
+    flex-direction: row;flex-wrap: wrap;justify-content: space-between;align-content: space-between;}
+        /* 제목 */
+     .domestic_title{width: 100%;}
+     .domestic_title h2{}
+        /* 국내선 박스 */
+    #domestic a{width: 32%;height: auto;display: inline-block;margin-bottom: 30px;}
+    #domestic a:hover .domestic_photo{box-shadow: 4px 4px 20px 0 #999;}
+        #domestic a:nth-of-type(1) .domestic_photo{background-image: url(../img/sub1/여행지/제주도.jpg);}
+        #domestic a:nth-of-type(2) .domestic_photo{background-image: url(../img/sub1/여행지/제주도.jpg);}
+        #domestic a:nth-of-type(3) .domestic_photo{background-image: url(../img/sub1/여행지/제주도.jpg);}
+        #domestic a:nth-of-type(4) .domestic_photo{background-image: url(../img/sub1/여행지/제주도.jpg);}
+        #domestic a:nth-of-type(5) .domestic_photo{background-image: url(../img/sub1/여행지/포항.jpg);}
+        #domestic a:nth-of-type(6) .domestic_photo{background-image: url(../img/sub1/여행지/제주도2.jpg);}
+        #domestic a:nth-of-type(7) .domestic_photo{background-image: url(../img/sub1/여행지/제주도2.jpg);}
+        #domestic a:nth-of-type(8) .domestic_photo{background-image: url(../img/sub1/여행지/제주도2.jpg);}
+        #domestic a:nth-of-type(9) .domestic_photo{background-image: url(../img/sub1/여행지/여수.jpg);}
+        #domestic a:nth-of-type(10) .domestic_photo{background-image: url(../img/sub1/여행지/광주.jpg);}
+        #domestic a:nth-of-type(11) .domestic_photo{background-image: url(../img/sub1/여행지/부산.jpg);}
+        #domestic a:nth-of-type(12) .domestic_photo{background-image: url(../img/sub1/여행지/여수.jpg);}
+    .domestic_ticket{width: 100%; height: 100%;}
+    .domestic_photo{width: 100%;height: 16.5vw;background-position: center;background-size: cover;
+    transition: 0.4s;}
+    .domestic_text{font-size: 14px;height: auto;}
+    .domestic_text p:nth-of-type(2){color: #afc42a;}
+    .domestic_text p:nth-of-type(3){font-size: 13px;}
+    .domestic_text h3{font-size: 17px;margin: 5px 0;}
+    
+    
+    /* 국제선 //////////////// */
+    #international{width: 100%;height: 250px; display: flex;
+        flex-direction: row;flex-wrap: wrap;justify-content:flex-start;align-content: space-between;}
+            /* 제목 */
+         .international_title{width: 100%;}
+            /* 국제선 박스 */
+        .international_ticket{width: 30%; height: 300px; margin-right: 5%;}
+        .international_photo{width: 100%;height: 200px;}
+        #international a{width: 32%;height: auto;display: inline-block;margin-bottom: 30px;margin-right: 20px;}
+        #international a:hover .international_photo{box-shadow: 4px 4px 20px 0 #999;}
+            #international a:nth-of-type(1) .international_photo{background-image: url(../img/sub1/여행지/괌.jpg);}
+            #international a:nth-of-type(2) .international_photo{background-image: url(../img/sub1/여행지/후쿠오카.jpg);}
+    
+        .international_ticket{width: 100%; height: 100%;}
+        .international_photo{width: 100%;height: 200px;background-position: center;background-size: cover;
+        transition: 0.4s;}
+        .international_text{font-size: 14px;height: auto;}
+        .international_text p:nth-of-type(2){color: #afc42a;}
+        .international_text p:nth-of-type(3){font-size: 13px;}
+        .international_text h3{font-size: 17px;margin: 5px 0;}
+    
+    #buttom{width: 100%;height: 300px;background-image: url(../img/sub1/배경.jpg);background-size: cover;
+    background-position: center;}
+}
+
+
+
+
+
+
+@media(min-width:1200px){
+  h2{font-size: 30px;margin-bottom: 20px;}
+/* 항공사진 ///////////////////////// */
+#aerial{width: 100%;height: 560px;background-color: #f9ffd6; display: flex; flex-direction: row;
+flex-wrap: wrap; justify-content: space-between;position: relative;}
+#aerial .aeria_text{width: 40%;height: 100%;}
+#aerial .aeria_photo{width: 60%;height: 105%; background-image: url(../img/sub1/메인\ 배경.jpg);
+background-position: center;background-size: cover;box-shadow: 0 0 50px 1px #777;}
+#aerial .aeria_photo2{position: absolute; bottom: -50px;left: 50%; background-image: url(../img/sub1/여행지/괌.jpg);
+width: 240px;height: 170px;margin: 10px;background-position: center;background-size: cover;
+box-shadow: 0 0 40px 1px #777;}
+#aerial .aeria_photo3{position: absolute; bottom: -50px;right: 50%; background-image: url(../img/sub1/여행지/후쿠오카.jpg);
+width: 240px;height: 170px;margin: 10px;background-position: center;background-size: cover;
+box-shadow: 0 0 40px 1px #777;}
+/* 항공사진 텍스트 */
+#aerial .aeria_text_box{float: right;width: 370px;margin-top: 200px;}
+#aerial .aeria_text_box h2{font-size: 50px;}
+#aerial .aeria_text_box h2 strong{color: #afc42a;font-size: 55px;}
+#aerial .aeria_text_box p:nth-of-type(1){font-size: 22px;}
+#aerial .aeria_text_box p:nth-of-type(2){color: #555;}
+
+/* 추천 항공  ////////////////////// */
+#airline_ticket{width: 940px;height: auto;padding: 100px 0 0 0; 
 margin: 0 auto;}
 
-#suggestion{width: 100%; height: auto;background-color: cornsilk;margin-bottom: 100px;}
-.suggestion_ticket{width: 100%;height: 250px;margin: 30px 0;}
- .suggestion_photo{width: 35%;height: 100%; background-color: cyan;float: left;}
- .suggestion_text{width: 65%;height: 100%;background-color: darkblue;float: right;}
-
+#suggestion{width: 100%; height: auto;margin-bottom: 100px;}
+.suggestion_ticket{width: 100%;height: 300px;margin: 50px 0;}
+.suggestion_ticket:nth-of-type(1){margin-top: 0;}
+    .suggestion_ticket:nth-of-type(1) .suggestion_photo{background-image: url(../img/sub1/여행지/제주도.jpg);}
+    .suggestion_ticket:nth-of-type(2) .suggestion_photo{background-image: url(../img/sub1/여행지/부산.jpg);}
+    .suggestion_ticket:nth-of-type(3) .suggestion_photo{background-image: url(../img/sub1/여행지/포항.jpg);}
+    .suggestion_ticket:nth-of-type(4) .suggestion_photo{background-image: url(../img/sub1/여행지/제주도2.jpg);}
+    .suggestion_ticket:nth-of-type(5) .suggestion_photo{background-image: url(../img/sub1/여행지/여수.jpg);}
+.suggestion_photo{width: 35%;height: 100%;float: left;background-position: center;background-size: cover;
+transition: 0.5s;}
+    .suggestion_photo:hover{box-shadow: 4px 4px 20px 1px #999;}
+ 
+.suggestion_text{width: 65%;height: 100%;float: right;
+padding-left: 40px;font-size: 18px;padding-top: 8px;}
+    .suggestion_text span{border: 1px solid #999;border-radius: 20px;padding:2px 5px;
+    cursor: pointer; font-size: 13px;}
+    .suggestion_text h3{font-size: 33px;}
+    .suggestion_text p{font-size: 20px;}
+    .suggestion_text p:nth-of-type(2){font-size: 25px;font-weight: bold;margin: 3px 0;}
+    .suggestion_text a{margin: 15px 0;display: inline-block; color: #afc42a;}
+    .suggestion_text a:hover{color: #333;}
 
 /* 국내선 ////////////// */
-#domestic{width: 100%;height: auto;background-color: darkcyan;margin-bottom: 100px; display: flex;
+#domestic{width: 100%;height: auto;;margin-bottom: 100px; display: flex;
 flex-direction: row;flex-wrap: wrap;justify-content: space-between;align-content: space-between;}
     /* 제목 */
  .domestic_title{width: 100%;}
  .domestic_title h2{}
     /* 국내선 박스 */
-.domestic_ticket{width: 30%; height: 300px; background-color: darkgray;}
-.domestic_photo{width: 100%;height: 200px;background-color: darkgoldenrod;}
-
+#domestic a{width: 32%;height: auto;display: inline-block;margin-bottom: 30px;}
+#domestic a:hover .domestic_photo{box-shadow: 4px 4px 20px 0 #999;}
+    #domestic a:nth-of-type(1) .domestic_photo{background-image: url(../img/sub1/여행지/제주도.jpg);}
+    #domestic a:nth-of-type(2) .domestic_photo{background-image: url(../img/sub1/여행지/제주도.jpg);}
+    #domestic a:nth-of-type(3) .domestic_photo{background-image: url(../img/sub1/여행지/제주도.jpg);}
+    #domestic a:nth-of-type(4) .domestic_photo{background-image: url(../img/sub1/여행지/제주도.jpg);}
+    #domestic a:nth-of-type(5) .domestic_photo{background-image: url(../img/sub1/여행지/포항.jpg);}
+    #domestic a:nth-of-type(6) .domestic_photo{background-image: url(../img/sub1/여행지/제주도2.jpg);}
+    #domestic a:nth-of-type(7) .domestic_photo{background-image: url(../img/sub1/여행지/제주도2.jpg);}
+    #domestic a:nth-of-type(8) .domestic_photo{background-image: url(../img/sub1/여행지/제주도2.jpg);}
+    #domestic a:nth-of-type(9) .domestic_photo{background-image: url(../img/sub1/여행지/여수.jpg);}
+    #domestic a:nth-of-type(10) .domestic_photo{background-image: url(../img/sub1/여행지/광주.jpg);}
+    #domestic a:nth-of-type(11) .domestic_photo{background-image: url(../img/sub1/여행지/부산.jpg);}
+    #domestic a:nth-of-type(12) .domestic_photo{background-image: url(../img/sub1/여행지/여수.jpg);}
+.domestic_ticket{width: 100%; height: 100%;}
+.domestic_photo{width: 100%;height: 200px;background-position: center;background-size: cover;
+transition: 0.4s;}
+.domestic_text{font-size: 14px;height: auto;}
+.domestic_text p:nth-of-type(2){color: #afc42a;}
+.domestic_text h3{font-size: 17px;margin: 5px 0;}
 
 
 /* 국제선 //////////////// */
-#international{width: 100%;height: auto;background-color: darkcyan;margin-bottom: 100px; display: flex;
+#international{width: 100%;height: 250px; display: flex;
     flex-direction: row;flex-wrap: wrap;justify-content:flex-start;align-content: space-between;}
         /* 제목 */
      .international_title{width: 100%;}
-     .international_title h2{}
         /* 국제선 박스 */
-    .international_ticket{width: 30%; height: 300px; background-color:cornsilk;margin-right: 5%;}
-    .international_photo{width: 100%;height: 200px;background-color: aquamarine;}
-    
+    .international_ticket{width: 30%; height: 300px; margin-right: 5%;}
+    .international_photo{width: 100%;height: 200px;}
+    #international a{width: 32%;height: auto;display: inline-block;margin-bottom: 30px;margin-right: 20px;}
+    #international a:hover .international_photo{box-shadow: 4px 4px 20px 0 #999;}
+        #international a:nth-of-type(1) .international_photo{background-image: url(../img/sub1/여행지/괌.jpg);}
+        #international a:nth-of-type(2) .international_photo{background-image: url(../img/sub1/여행지/후쿠오카.jpg);}
+
+    .international_ticket{width: 100%; height: 100%;}
+    .international_photo{width: 100%;height: 200px;background-position: center;background-size: cover;
+    transition: 0.4s;}
+    .international_text{font-size: 14px;height: auto;}
+    .international_text p:nth-of-type(2){color: #afc42a;}
+    .international_text h3{font-size: 17px;margin: 5px 0;}
+
+#buttom{width: 100%;height: 300px;background-image: url(../img/sub1/배경.jpg);background-size: cover;
+background-position: center;}  
+}

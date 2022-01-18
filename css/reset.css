@@ -1,4 +1,15 @@
-*{margin: 0; padding: 0;box-sizing: border-box;}
+@font-face {
+    font-family: aaa;
+    src: url(../font/NanumSquareOTF_acR.otf);
+}
+@font-face {
+    font-family: bbb;
+    src: url(../font/NanumSquareOTF_acEB.otf);
+}
+
+
+*{margin: 0; padding: 0;box-sizing: border-box;  font-family:'aaa';transition: 0.2s;}
+h2,h3,h4{font-family: bbb;}
 a{text-decoration: none; color: #111;}
 li,ol,ul{list-style: none;}
 
